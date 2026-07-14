@@ -1,0 +1,27 @@
+# Build outputs
+dist/
+dist-ssr
+build/
+coverage/
+.claude
+.gemini
+
+# Dependencies
+node_modules/
+
+# Lock files
+.wrangler
+package-lock.json
+yarn.lock
+
+# Generated / third-party
+public/
+e2e/
+
+# Generated docs
+documentation/
+docs
+
+# Files not to format
+*.min.js
+*.min.css

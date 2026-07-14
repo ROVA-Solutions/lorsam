@@ -32,13 +32,13 @@ Starts the Vite dev server (default `http://localhost:5173`) with hot module rel
 
 ## Scripts
 
-| Command | Description |
-|---|---|
-| `npm run dev` | Start local dev server with HMR |
-| `npm run build` | Type-check (`tsc -b`) and build for production into `dist/` |
-| `npm run preview` | Serve the production build locally |
-| `npm run lint` | Run ESLint over the project |
-| `npm run deploy` | Build and deploy `dist/` to Cloudflare Pages via Wrangler |
+| Command           | Description                                                 |
+| ----------------- | ----------------------------------------------------------- |
+| `npm run dev`     | Start local dev server with HMR                             |
+| `npm run build`   | Type-check (`tsc -b`) and build for production into `dist/` |
+| `npm run preview` | Serve the production build locally                          |
+| `npm run lint`    | Run ESLint over the project                                 |
+| `npm run deploy`  | Build and deploy `dist/` to Cloudflare Pages via Wrangler   |
 
 ## Project structure
 
