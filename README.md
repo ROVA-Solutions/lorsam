@@ -1,16 +1,90 @@
-# React + Vite
+# lorsam
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + TypeScript + Tailwind CSS v4, built with Vite, deployed to Cloudflare Pages.
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [React 19](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vite.dev/) — dev server & build tool
+- [Tailwind CSS v4](https://tailwindcss.com/) — via `@tailwindcss/vite` plugin
+- [ESLint](https://eslint.org/) with `typescript-eslint`
+- [Wrangler](https://developers.cloudflare.com/workers/wrangler/) — Cloudflare Pages deploy
 
-## React Compiler
+## Prerequisites
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [Node.js](https://nodejs.org/) 20+
+- npm (comes with Node)
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+## Development
+
+```bash
+npm run dev
+```
+
+Starts the Vite dev server (default `http://localhost:5173`) with hot module reload.
+
+## Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start local dev server with HMR |
+| `npm run build` | Type-check (`tsc -b`) and build for production into `dist/` |
+| `npm run preview` | Serve the production build locally |
+| `npm run lint` | Run ESLint over the project |
+| `npm run deploy` | Build and deploy `dist/` to Cloudflare Pages via Wrangler |
+
+## Project structure
+
+```
+├── public/            # static assets served as-is (also holds _redirects for SPA routing)
+├── src/
+│   ├── assets/         # images/icons imported by components
+│   ├── App.tsx          # root component
+│   ├── main.tsx         # React entry point
+│   ├── index.css         # global styles + Tailwind import
+│   └── vite-env.d.ts       # Vite/TS ambient types
+├── index.html          # HTML entry point
+├── vite.config.ts       # Vite config (React + Tailwind plugins)
+├── tsconfig.json         # TS project references
+├── tsconfig.app.json       # TS config for app source (src/)
+├── tsconfig.node.json       # TS config for Vite config itself
+├── eslint.config.js        # ESLint flat config
+└── wrangler.jsonc          # Cloudflare Pages config
+```
+
+## Styling
+
+Tailwind CSS v4 is wired through the `@tailwindcss/vite` plugin (no `postcss.config.js` needed). Utility classes are available everywhere once `@import "tailwindcss";` (already present in `src/index.css`) is loaded. Custom CSS variables/theme tokens also live in `src/index.css`.
+
+## Deployment (Cloudflare Pages)
+
+### Option A — CLI deploy
+
+```bash
+npx wrangler login   # one-time auth
+npm run deploy
+```
+
+This builds the app and runs `wrangler pages deploy dist`, publishing under the project name defined in `wrangler.jsonc`.
+
+### Option B — Git integration (Cloudflare dashboard)
+
+1. Push this repo to GitHub/GitLab.
+2. In the Cloudflare dashboard: **Workers & Pages → Create → Pages → Connect to Git**.
+3. Set:
+   - **Build command:** `npm run build`
+   - **Build output directory:** `dist`
+4. Every push to the connected branch triggers an automatic build & deploy.
+
+`public/_redirects` (`/* /index.html 200`) is included so client-side routing (if added later, e.g. React Router) works correctly on Cloudflare Pages.
+
+## Type checking
+
+TypeScript project references split app code (`tsconfig.app.json`) from build tooling config (`tsconfig.node.json`). `npm run build` always type-checks before bundling; run `tsc -b` directly for a standalone type check without building.
