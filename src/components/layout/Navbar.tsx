@@ -56,11 +56,11 @@ export function Navbar(): React.JSX.Element {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        {/* <div className="hidden md:block">
           <CTAButton to={ERoute.Contacto} variant="primary" size="md">
             Cotizar
           </CTAButton>
-        </div>
+        </div> */}
 
         <button
           type="button"

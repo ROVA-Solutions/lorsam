@@ -1,7 +1,8 @@
-import { Phone, MessageCircle } from 'lucide-react';
+import { Phone, Contact } from 'lucide-react';
 import { lorsamData } from '../../data/lorsam';
 import { Container } from '../ui/Container';
 import { CTAButton } from '../ui/CTAButton';
+import { WhatsAppIcon } from '../ui/BrandIcons';
 import { telHref, waHref, formatPhone } from '../../lib/format';
 import { ERoute } from '../../types';
 
@@ -30,8 +31,8 @@ export function ContactoCTA(): React.JSX.Element {
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-          <CTAButton href={waHref(contact.whatsapp[0], message)} external variant="primary" size="lg">
-            <MessageCircle className="h-5 w-5" aria-hidden focusable={false} />
+          <CTAButton href={waHref(contact.whatsapp[0], message)} external variant="green" size="lg">
+            <WhatsAppIcon className="h-5 w-5" />
             WhatsApp
           </CTAButton>
           <CTAButton href={telHref(contact.office[0])} variant="white" size="lg">
@@ -39,6 +40,7 @@ export function ContactoCTA(): React.JSX.Element {
             {formatPhone(contact.office[0])}
           </CTAButton>
           <CTAButton to={ERoute.Contacto} variant="ghost-invert" size="lg">
+            <Contact className="h-5 w-5" aria-hidden focusable={false} />
             Ver todos los contactos
           </CTAButton>
         </div>

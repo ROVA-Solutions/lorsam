@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Wrench } from 'lucide-react';
+import { ArrowRight, PhoneCall, Wrench } from 'lucide-react';
 import { lorsamData } from '../../data/lorsam';
 import { IMAGES, unsplash } from '../../lib/images';
 import { CTAButton } from '../ui/CTAButton';
@@ -31,7 +31,7 @@ export function Hero(): React.JSX.Element {
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-32 top-0 -z-10 h-[32rem] w-[32rem] rounded-full bg-brand-red-500/15 blur-3xl"
+        className="pointer-events-none absolute -right-32 top-0 -z-10 h-128 w-lg rounded-full bg-brand-red-500/15 blur-3xl"
       />
 
       <Container className="py-24 sm:py-32 lg:py-40">
@@ -46,7 +46,7 @@ export function Hero(): React.JSX.Element {
             HVAC/R · Industrial · Comercial · Corporativo
           </p>
 
-          <h1 className="text-balance font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
+          <h1 className="text-balance font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl text-white">
             {company.slogan}
           </h1>
 
@@ -56,9 +56,9 @@ export function Hero(): React.JSX.Element {
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
-            <CTAButton to={ERoute.Contacto} variant="primary" size="lg">
-              Cotizar proyecto
-              <ArrowRight className="h-5 w-5" aria-hidden focusable={false} />
+            <CTAButton to={ERoute.Contacto} variant="green" size="lg">
+              Contáctanos
+              <PhoneCall className="h-5 w-5" aria-hidden focusable={false} />
             </CTAButton>
             <CTAButton to={ERoute.Servicios} variant="ghost-invert" size="lg">
               Ver servicios

@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '../../lib/cn';
 
-type Variant = 'primary' | 'secondary' | 'outline' | 'white' | 'ghost-invert';
+type Variant = 'primary' | 'secondary' | 'outline' | 'white' | 'ghost-invert' | 'green';
 type Size = 'md' | 'lg';
 
 interface IBaseProps {
@@ -43,6 +43,7 @@ const VARIANT_CLASSES: Record<Variant, string> = {
   outline: 'border-2 border-brand-blue-600 text-brand-blue-700 hover:bg-brand-blue-50',
   white: 'bg-white text-brand-blue-800 hover:bg-brand-blue-50 shadow-sm',
   'ghost-invert': 'border border-white/40 text-white hover:bg-white/10',
+  green: 'bg-green-600 text-white hover:bg-green-700 shadow-sm shadow-green-500/20',
 };
 
 const SIZE_CLASSES: Record<Size, string> = {

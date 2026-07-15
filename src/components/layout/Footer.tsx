@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import { Phone, MessageCircle, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import { lorsamData } from '../../data/lorsam';
 import { NAV_LINKS } from '../../lib/constants';
 import { Logo } from '../ui/Logo';
-import { FacebookIcon } from '../ui/BrandIcons';
+import { FacebookIcon, WhatsAppIcon } from '../ui/BrandIcons';
 import { Container } from '../ui/Container';
 import { telHref, waHref, mailHref, formatPhone } from '../../lib/format';
 
@@ -56,7 +56,7 @@ export function Footer(): React.JSX.Element {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-brand-blue-200 transition-colors hover:text-white"
                 >
-                  <MessageCircle className="h-4 w-4 shrink-0" aria-hidden focusable={false} />
+                  <WhatsAppIcon className="h-4 w-4 shrink-0" />
                   WhatsApp
                 </a>
               </li>

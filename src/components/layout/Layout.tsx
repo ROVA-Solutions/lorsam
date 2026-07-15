@@ -17,23 +17,19 @@ export function Layout(): React.JSX.Element {
   return (
     <>
       <StructuredData />
-
       <AnimatePresence>{visible && <SplashScreen onSkip={dismiss} />}</AnimatePresence>
-
       <a
         href="#main"
         className="sr-only z-60 rounded-md bg-brand-blue-700 px-4 py-2 text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
       >
         Saltar al contenido
       </a>
-
       <ScrollToTop />
-      <Navbar />
 
+      <Navbar />
       <main id="main" tabIndex={-1} className="focus:outline-none">
         <Outlet />
       </main>
-
       <Footer />
     </>
   );

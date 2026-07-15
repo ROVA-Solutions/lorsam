@@ -45,7 +45,7 @@ export function EspecialidadBento(): React.JSX.Element {
               aria-hidden
               className="absolute inset-0 -z-10 bg-linear-to-t from-brand-blue-950 via-brand-blue-950/70 to-transparent"
             />
-            <h3 className="text-2xl font-bold leading-tight sm:text-3xl">{specialty.headline}</h3>
+            <h3 className="text-2xl font-bold leading-tight sm:text-3xl text-white">{specialty.headline}</h3>
             <p className="mt-3 max-w-md text-sm leading-relaxed text-brand-blue-100">{specialty.description}</p>
             <CTAButton to={ERoute.Servicios} variant="white" size="md" className="mt-6 self-start">
               Conoce el proceso
@@ -85,7 +85,7 @@ export function EspecialidadBento(): React.JSX.Element {
           })}
 
           {/* National-reach stat tile */}
-          <article className="flex flex-col justify-center rounded-2xl bg-brand-blue-700 p-6 text-white">
+          <article className="flex flex-col justify-center rounded-2xl bg-brand-blue-700 p-6 text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div className="font-display text-4xl font-extrabold">{company.unitsInstalled}+</div>
             <p className="mt-2 text-sm leading-relaxed text-brand-blue-100">
               Unidades instaladas en distintos estados de la {company.regionsCovered}.

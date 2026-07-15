@@ -1,6 +1,7 @@
-import { Phone, MessageCircle, Mail, MapPin, Navigation } from 'lucide-react';
+import { Phone, Mail, MapPin, Navigation } from 'lucide-react';
 import { Seo } from '../components/seo/Seo';
-import { FacebookIcon } from '../components/ui/BrandIcons';
+import { FacebookIcon, WhatsAppIcon } from '../components/ui/BrandIcons';
+import { CopyButton } from '../components/ui/CopyButton';
 import { SEO_BY_ROUTE } from '../lib/seoData';
 import { lorsamData } from '../data/lorsam';
 import { PageHeader } from '../components/ui/PageHeader';
@@ -57,8 +58,8 @@ export function ContactoPage(): React.JSX.Element {
           {/* WhatsApp */}
           <Reveal delay={0.06} className="h-full">
             <article className="flex h-full flex-col rounded-2xl border border-fog bg-white p-7 shadow-sm">
-              <span className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-red-50 text-brand-red-600">
-                <MessageCircle className="h-6 w-6" aria-hidden focusable={false} />
+              <span className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-green-100 text-green-600">
+                <WhatsAppIcon className="h-6 w-6" />
               </span>
               <h2 className="text-lg font-bold text-ink">WhatsApp</h2>
               <ul className="mt-4 space-y-2">
@@ -68,7 +69,7 @@ export function ContactoPage(): React.JSX.Element {
                       href={waHref(phone, waMessage)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-graphite transition-colors hover:text-brand-red-600"
+                      className="text-graphite transition-colors hover:text-green-600"
                     >
                       Línea {i + 1}: {formatPhone(phone)}
                     </a>
@@ -84,14 +85,20 @@ export function ContactoPage(): React.JSX.Element {
               <span className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-blue-50 text-brand-blue-700">
                 <Mail className="h-6 w-6" aria-hidden focusable={false} />
               </span>
-              <h2 className="text-lg font-bold text-ink">Correo y redes</h2>
-              <div className="mt-4 space-y-2">
-                <a
-                  href={mailHref(contact.email, 'Cotización de proyecto HVAC/R')}
-                  className="block break-all text-graphite transition-colors hover:text-brand-blue-700"
-                >
-                  {contact.email}
-                </a>
+              <h2 className="text-lg font-bold text-ink">Correo</h2>
+              <div className="mt-2 space-y-2">
+                <div className="flex items-center gap-2">
+                  <a
+                    href={mailHref(contact.email, 'Cotización de proyecto HVAC/R')}
+                    className="break-all text-graphite transition-colors hover:text-brand-blue-700"
+                  >
+                    {contact.email}
+                  </a>
+                  <CopyButton value={contact.email} label="correo" />
+                </div>
+              </div>
+              <h2 className="mt-3 text-lg font-bold text-ink">Redes</h2>
+              <div className="mt-2 space-y-2">
                 <a
                   href={contact.facebook}
                   target="_blank"

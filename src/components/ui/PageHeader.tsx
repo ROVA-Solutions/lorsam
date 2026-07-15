@@ -41,7 +41,7 @@ export function PageHeader({
           className="max-w-3xl"
         >
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-brand-red-400">{eyebrow}</p>
-          <h1 className="text-balance font-display text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
+          <h1 className="text-balance font-display text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl text-white">
             {title}
           </h1>
           {lead && <p className="mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-brand-blue-100">{lead}</p>}
