@@ -1,0 +1,357 @@
+{
+  "company": {
+    "name": "LORSAM",
+    "legalName": "Multi Servicios y Climas Lorsam SA de CV",
+    "slogan": "Innovación Térmica, Excelencia Operativa",
+    "foundedYear": 1982,
+    "yearsExperience": "40+",
+    "unitsInstalled": 500,
+    "regionsCovered": "República Mexicana"
+  },
+  "mission": "Proveer soluciones integrales y ecológicas en sistemas HVAC/R, integrando tecnología de vanguardia y talento altamente especializado. Nuestro compromiso es optimizar el confort, la eficiencia energética y la productividad operativa en los sectores industrial, comercial y corporativo.",
+  "vision": "Posicionarnos como líderes referentes en la industria de la climatización y refrigeración a nivel nacional, reconocidos por nuestra excelencia técnica, capacidad de innovación sostenible y el desarrollo continuo de nuestros procesos y servicios.",
+  "values": [
+    {
+      "title": "Honestidad y Transparencia",
+      "description": "Actuamos con rectitud en cada diagnóstico, propuesta y ejecución, garantizando certidumbre total para nuestros clientes.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Eficiencia Operativa",
+      "description": "Maximizamos el uso del tiempo y los recursos para entregar resultados precisos, funcionales y bien hechos desde el primer momento.",
+      "icon": "Gauge"
+    },
+    {
+      "title": "Responsabilidad",
+      "description": "Compromiso inquebrantable con los tiempos de entrega, los estándares de calidad y la seguridad en cada proyecto.",
+      "icon": "BadgeCheck"
+    },
+    {
+      "title": "Solidaridad y Trabajo en Equipo",
+      "description": "Fomentamos la colaboración integral con nuestro equipo, clientes y proveedores para alcanzar el éxito conjunto.",
+      "icon": "Users"
+    },
+    {
+      "title": "Lealtad",
+      "description": "Construimos relaciones a largo plazo basadas en la confianza y el respaldo continuo a quienes confían en nosotros.",
+      "icon": "Handshake"
+    }
+  ],
+  "history": {
+    "headline": "Más de 40 años de evolución y excelencia térmica",
+    "intro": [
+      "Nuestro recorrido comenzó en 1982 con pasos firmes bajo el nombre de Climas y Refrigeración del Valle. A lo largo de las décadas, nuestra vocación por el servicio y la adaptación a las nuevas tecnologías nos impulsaron a evolucionar continuamente.",
+      "Transitamos por etapas de gran crecimiento y transformación estructural —pasando por identidades como Refri-Valle y Servicios Generales y Aire Acondicionado— hasta consolidarnos estructural y corporativamente en el año 2025 como Multi Servicios y Climas Lorsam SA de CV.",
+      "Hoy, con más de cuatro décadas de herencia técnica, nos enorgullece ser líderes regionales en el sector de la climatización y refrigeración, manteniendo intacto nuestro compromiso fundacional: brindar bienestar, innovación y satisfacción total a cada cliente."
+    ],
+    "timeline": [
+      {
+        "year": "1982",
+        "stage": "Fundación",
+        "name": "Climas y Refrigeración del Valle",
+        "description": "Iniciamos operaciones con pasos firmes, sentando las bases de nuestra vocación por el servicio térmico."
+      },
+      {
+        "year": "",
+        "stage": "Evolución",
+        "name": "Refri-Valle",
+        "description": "Primera transformación estructural impulsada por el crecimiento y la adaptación a nuevas tecnologías."
+      },
+      {
+        "year": "",
+        "stage": "Expansión",
+        "name": "Servicios Generales y Aire Acondicionado",
+        "description": "Ampliamos nuestra especialización hacia proyectos integrales de climatización y aire acondicionado."
+      },
+      {
+        "year": "2025",
+        "stage": "Consolidación",
+        "name": "Multi Servicios y Climas Lorsam SA de CV",
+        "description": "Consolidación estructural y corporativa como LORSAM, líderes regionales en climatización y refrigeración."
+      }
+    ],
+    "technicalEvolution": [
+      {
+        "category": "Aire Acondicionado y Calefacción",
+        "detail": "Equipos Mini Split, Multi Split, tipo Cassette, divididos y unidades Paquete.",
+        "icon": "Thermometer"
+      },
+      {
+        "category": "Sistemas de Agua Helada",
+        "detail": "Chillers y Manejadoras de Expansión Directa con intercambiador.",
+        "icon": "Droplets"
+      },
+      {
+        "category": "Ventilación y Extracción",
+        "detail": "Equipos Fan & Coil y sistemas de inyección/extracción industrial.",
+        "icon": "Wind"
+      },
+      {
+        "category": "Refrigeración Comercial e Industrial",
+        "detail": "Diseño y mantenimiento de cuartos fríos de conservación y congelación.",
+        "icon": "Snowflake"
+      },
+      {
+        "category": "Control Crítico y Energía",
+        "detail": "Control de precisión de temperatura y humedad, programación automática y plantas eléctricas de emergencia.",
+        "icon": "Gauge"
+      }
+    ]
+  },
+  "services": [
+    {
+      "title": "Asesoría Técnica Especializada",
+      "description": "Orientación experta para que cada decisión sobre tus sistemas de climatización, ventilación y extracción sea la correcta, maximizando el rendimiento y optimizando tu inversión.",
+      "icon": "Lightbulb"
+    },
+    {
+      "title": "Ingeniería y Desarrollo de Proyectos",
+      "description": "Abarcamos todo el ciclo de vida del proyecto, del diseño conceptual a la implementación final, con máxima eficiencia y estricto cumplimiento de presupuesto.",
+      "icon": "PencilRuler"
+    },
+    {
+      "title": "Instalación y Puesta en Marcha",
+      "description": "Técnicos certificados ejecutan instalaciones impecables. Aseguramos un arranque perfecto priorizando seguridad, estética y funcionamiento eficiente.",
+      "icon": "Wrench"
+    },
+    {
+      "title": "Mantenimiento Preventivo y Correctivo",
+      "description": "Programas para extender la vida útil de tus sistemas y reparaciones con tiempos de respuesta rápidos para que tu operación no se detenga.",
+      "icon": "Settings"
+    },
+    {
+      "title": "Pólizas de Mantenimiento Integral",
+      "description": "Pólizas personalizadas que cubren desde inspecciones programadas hasta la gestión de reparaciones y suministro de refacciones.",
+      "icon": "FileCheck2"
+    },
+    {
+      "title": "Especialización y Cobertura Técnica",
+      "description": "Cálculo, ingeniería, instalación y mantenimiento de proyectos de cualquier magnitud y complejidad.",
+      "icon": "Layers"
+    }
+  ],
+  "servicesEquipment": [
+    "Sistemas de expansión directa y agua helada.",
+    "Sistemas VRF y TVR.",
+    "Chillers (sistemas de placas, y de casco y tubo).",
+    "Torres de enfriamiento industrial (cálculo, restauración y mantenimiento).",
+    "Sistemas de ductos (incluyendo espiroductos), difusores, rejillas y compuertas."
+  ],
+  "specialty": {
+    "headline": "Ingeniería, diseño e implementación a gran escala",
+    "description": "Nos distinguimos por nuestra alta capacidad técnica en el cálculo, ingeniería e instalación de sistemas de volumen de refrigerante variable (VRF y TVR). Apoyados en software especializado de última generación, diseñamos proyectos precisos y fabricamos sistemas de ductería a la medida, garantizando un flujo de aire óptimo y la máxima eficiencia energética.",
+    "nationalBacking": "Gracias a nuestra capacidad logística y operativa, hemos instalado con éxito más de 500 unidades de estos sistemas en distintos estados de la República Mexicana, cumpliendo con los más altos estándares de calidad industrial y comercial.",
+    "catalog": [
+      {
+        "title": "Volumen Variable (Alta Eficiencia)",
+        "detail": "Sistemas VRF y TVR.",
+        "icon": "Fan"
+      },
+      {
+        "title": "Climatización Comercial y Corporativa",
+        "detail": "Minisplits, Multi Splits, sistemas Divididos, unidades Paquete y tipo Cassette.",
+        "icon": "AirVent"
+      },
+      {
+        "title": "Sistemas Aplicados (Agua Helada)",
+        "detail": "Chillers y Fan & Coils.",
+        "icon": "Droplets"
+      },
+      {
+        "title": "Calidad del Aire y Flujo",
+        "detail": "Ventilación, inyección y extracción industrial.",
+        "icon": "Wind"
+      },
+      {
+        "title": "Refrigeración Especializada",
+        "detail": "Cuartos fríos: cámaras de conservación y de congelación.",
+        "icon": "Snowflake"
+      }
+    ]
+  },
+  "whyChooseUs": [
+    {
+      "title": "Tecnología y Máxima Eficiencia Energética",
+      "description": "Equipos de vanguardia que maximizan el rendimiento térmico y reducen significativamente el consumo eléctrico, optimizando tu retorno de inversión.",
+      "icon": "Zap"
+    },
+    {
+      "title": "Servicio Integral 100% Garantizado",
+      "description": "Respaldamos cada proyecto con pólizas y garantías sólidas. Aseguramos la continuidad operativa de tu empresa bajo cualquier circunstancia.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Ejecución Técnica Especializada",
+      "description": "Equipo rigurosamente capacitado y actualizado en las normativas vigentes. Intervenciones seguras, limpias y precisas desde el primer diagnóstico.",
+      "icon": "Award"
+    }
+  ],
+  "clients": {
+    "intro": "Respaldamos proyectos de misión crítica en los sectores más exigentes de México, del cuidado de la salud a la infraestructura industrial y gubernamental.",
+    "sectors": [
+      {
+        "name": "Salud e Investigación Clínica",
+        "description": "Proyectos de alta exigencia sanitaria, control de humedad y climatización de precisión.",
+        "icon": "HeartPulse",
+        "clients": [
+          {
+            "name": "IMSS",
+            "detail": "Mantenimiento e instalación en decenas de clínicas, UMF y Hospitales Generales de Zona (HGZ) del estado."
+          },
+          {
+            "name": "Hospital y Centro Médico San Jorge",
+            "detail": "Institución médica privada de alto flujo (Centro y Apodaca)."
+          },
+          {
+            "name": "CIBIN",
+            "detail": "Centro de Investigación del Noreste, donde la precisión de temperatura es vital."
+          },
+          {
+            "name": "Constructora Monteliz",
+            "detail": "Infraestructura médica, incluyendo la Clínica 65 y la Clínica 36."
+          }
+        ]
+      },
+      {
+        "name": "Desarrollos Verticales, Inmobiliarias y Arquitectura",
+        "description": "Ingeniería HVAC para grandes edificaciones, plazas comerciales y torres de usos mixtos.",
+        "icon": "Building2",
+        "clients": [
+          {
+            "name": "Torres y Edificios Corporativos",
+            "detail": "Torre Micrópolis, Torre Fuentes, Torre Planetario, Torre Martel, Torre Bosques, Torre Amazonas y Edificio Serena."
+          },
+          {
+            "name": "Complejos Comerciales",
+            "detail": "Punto Central, Plaza Vita y Plaza Leones Premier."
+          },
+          {
+            "name": "Inmobiliarias y Despachos",
+            "detail": "Inmobiliaria Olaf, Islas Canarias, KZ Ingeniería, Norman Miller Metropolitan Architecture y Grupo Premier Universal."
+          }
+        ]
+      },
+      {
+        "name": "Industrial, Logística y Manufactura",
+        "description": "Enfriamiento de procesos industriales, naves logísticas y áreas operativas.",
+        "icon": "Factory",
+        "clients": [
+          {
+            "name": "LG Industrial Systems",
+            "detail": "Planta de manufactura electrónica de alta tecnología."
+          },
+          {
+            "name": "Transporte y Logística",
+            "detail": "Transportadora Tres Generaciones, Express 57 y Súper Express La Chicharra."
+          },
+          {
+            "name": "Complejos y Servicios Industriales",
+            "detail": "Parque Industrial Escobedo, Grupo Gerimex y Tecno Servicios Diablo SA de CV."
+          },
+          {
+            "name": "Forestal La Reforma",
+            "detail": "Empresa del sector maderero y forestal."
+          }
+        ]
+      },
+      {
+        "name": "Misión Crítica y Telecomunicaciones",
+        "description": "Sistemas de enfriamiento continuo 24/7 para proteger servidores y equipos de telecomunicación.",
+        "icon": "Server",
+        "clients": [
+          {
+            "name": "Marcatel Internacional",
+            "detail": "Corporativo líder en telecomunicaciones, incluyendo casetas de precisión (SAET)."
+          },
+          {
+            "name": "TICSA Comunicaciones",
+            "detail": "Thousand International Companies: redes, tecnología y conectividad."
+          },
+          {
+            "name": "Comunicaciones Unifica",
+            "detail": "Infraestructura de telecomunicaciones."
+          }
+        ]
+      },
+      {
+        "name": "Gobierno, Educación y Entidades Públicas",
+        "description": "Licitaciones y proyectos institucionales de gran envergadura.",
+        "icon": "Landmark",
+        "clients": [
+          {
+            "name": "CFE",
+            "detail": "Climatización en múltiples sucursales, subestaciones y edificios administrativos de la Zona Oriente."
+          },
+          {
+            "name": "Municipio de General Escobedo",
+            "detail": "Presidencia, Torre Administrativa y el Centro de Seguridad C4."
+          },
+          {
+            "name": "Palacio de Justicia",
+            "detail": "Sede del poder judicial."
+          },
+          {
+            "name": "Instituciones Educativas",
+            "detail": "Universidad Ciudadana de Nuevo León y Guardería Mixta en San Pedro Garza García."
+          },
+          {
+            "name": "Infraestructura Pública",
+            "detail": "Proyecto gubernamental en Francisco I. Madero, Torreón, Coahuila."
+          }
+        ]
+      },
+      {
+        "name": "Hospitalidad, Gastronomía y Entretenimiento",
+        "description": "Confort térmico indispensable para la experiencia del cliente.",
+        "icon": "UtensilsCrossed",
+        "clients": [
+          {
+            "name": "Entretenimiento y Vida Nocturna",
+            "detail": "Grupo Los Rieles (Saltillo, Lázaro Cárdenas, Revolución, Fleteros y Barragán), Mesón de la Guardia, Bar Bisou y Bar Jeromme."
+          },
+          {
+            "name": "Restaurantes",
+            "detail": "Rest. Las Aliadas (Lázaro Cárdenas) y Rest. Figaro's Pizza (Leones)."
+          },
+          {
+            "name": "Hotelería",
+            "detail": "Operadora Turística San Nicolás (Hotel Grand Viator) y Próxima Hoteles (Pesquería y Tampico)."
+          }
+        ]
+      },
+      {
+        "name": "Comercial, Retail y Residencial Premium",
+        "description": "Soluciones estéticas y de alto rendimiento comercial.",
+        "icon": "Store",
+        "clients": [
+          {
+            "name": "Desarrollos Residenciales Exclusivos",
+            "detail": "Terralta Club y Terralta Departamentos (Olivos Sur), y residencias de alta gama en Chipinque y Del Valle."
+          },
+          {
+            "name": "Comercio (Retail)",
+            "detail": "First Cash (cadena internacional) y Orsan del Norte (estaciones de servicio de Grupo Orsan)."
+          },
+          {
+            "name": "Servicios Empresariales",
+            "detail": "Impresos Publicitarios YGA y AFLEMS (Allende, N.L.)."
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "office": ["8140508085", "8114096175"],
+    "whatsapp": ["8132665496", "8132673228", "8132667010"],
+    "email": "administracion@lorsam.com",
+    "facebook": "https://www.facebook.com/profile.php?id=61577167671892",
+    "address": {
+      "street": "Av Luis Donaldo Colosio 1206, L-27",
+      "neighborhood": "Lomas Del Poniente",
+      "city": "Santa Catarina",
+      "state": "Nuevo León",
+      "country": "México",
+      "full": "Av Luis Donaldo Colosio 1206, L-27, Lomas Del Poniente, Santa Catarina, N.L."
+    }
+  }
+}

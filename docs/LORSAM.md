@@ -37,12 +37,13 @@ A lo largo de nuestra historia, hemos expandido nuestra especialización para do
 - Refrigeración Comercial e Industrial: Diseño y mantenimiento de cuartos fríos de conservación y congelación.
 - Control Crítico y Energía: Equipos de precisión para control de temperatura y humedad, programación automática y plantas eléctricas de emergencia.
 
-# Telefonos
+# Informacion de Contacto
 
 - Oficina: 8140508085 / 8114096175
 - Whats App #1: 8132665496
 - Whats App #2: 8132673228
 - Whats App #3: 8132667010
+- Facebook Page: https://www.facebook.com/profile.php?id=61577167671892
 
 # Correo
 

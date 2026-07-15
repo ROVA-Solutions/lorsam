@@ -1,0 +1,98 @@
+import { ArrowRight } from 'lucide-react';
+import { lorsamData } from '../../data/lorsam';
+import { IMAGES, unsplash } from '../../lib/images';
+import { cn } from '../../lib/cn';
+import { Section } from '../ui/Section';
+import { SectionHeading } from '../ui/SectionHeading';
+import { Reveal } from '../ui/Reveal';
+import { Icon } from '../ui/Icon';
+import { CTAButton } from '../ui/CTAButton';
+import { ERoute } from '../../types';
+
+/** Grid span per catalog index to build the asymmetric bento layout. */
+const SPAN_BY_INDEX: Record<number, string> = {
+  0: 'sm:col-span-2',
+  4: 'sm:col-span-2',
+};
+
+/**
+ * "Nuestra Especialidad" as a Bento grid: a featured VRF/TVR narrative tile,
+ * a flagship highlight, capability tiles and a national-reach stat tile.
+ */
+export function EspecialidadBento(): React.JSX.Element {
+  const { specialty, company } = lorsamData;
+
+  return (
+    <Section id="especialidad" tone="mist" ariaLabel="Nuestra especialidad">
+      <SectionHeading
+        eyebrow="Nuestra Especialidad"
+        title="Ingeniería VRF/TVR a gran escala"
+        lead="Alta capacidad técnica en el cálculo, ingeniería e instalación de sistemas de volumen de refrigerante variable, apoyados en software de última generación."
+      />
+
+      <Reveal className="mt-14">
+        <div className="grid auto-rows-[minmax(11rem,1fr)] grid-flow-row-dense gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Featured narrative tile */}
+          <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-brand-blue-950 p-7 text-white sm:col-span-2 sm:row-span-2">
+            <img
+              src={unsplash(IMAGES.engineering, 1000)}
+              alt=""
+              aria-hidden
+              className="absolute inset-0 -z-10 h-full w-full object-cover opacity-30"
+              loading="lazy"
+            />
+            <div
+              aria-hidden
+              className="absolute inset-0 -z-10 bg-linear-to-t from-brand-blue-950 via-brand-blue-950/70 to-transparent"
+            />
+            <h3 className="text-2xl font-bold leading-tight sm:text-3xl">{specialty.headline}</h3>
+            <p className="mt-3 max-w-md text-sm leading-relaxed text-brand-blue-100">{specialty.description}</p>
+            <CTAButton to={ERoute.Servicios} variant="white" size="md" className="mt-6 self-start">
+              Conoce el proceso
+              <ArrowRight className="h-4 w-4" aria-hidden focusable={false} />
+            </CTAButton>
+          </article>
+
+          {/* Capability tiles */}
+          {specialty.catalog.map((item, i) => {
+            const isFlagship = i === 0;
+            return (
+              <article
+                key={item.title}
+                className={cn(
+                  'flex flex-col justify-between rounded-2xl border p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg',
+                  SPAN_BY_INDEX[i],
+                  isFlagship
+                    ? 'border-transparent bg-brand-red-500 text-white'
+                    : 'border-fog bg-white text-graphite hover:border-brand-blue-200',
+                )}
+              >
+                <Icon
+                  name={item.icon}
+                  className={cn('h-8 w-8', isFlagship ? 'text-white' : 'text-brand-blue-600')}
+                  strokeWidth={1.75}
+                />
+                <div className="mt-4">
+                  <h3 className={cn('text-base font-semibold', isFlagship ? 'text-white' : 'text-ink')}>
+                    {item.title}
+                  </h3>
+                  <p className={cn('mt-1 text-sm leading-relaxed', isFlagship ? 'text-white/90' : 'text-steel')}>
+                    {item.detail}
+                  </p>
+                </div>
+              </article>
+            );
+          })}
+
+          {/* National-reach stat tile */}
+          <article className="flex flex-col justify-center rounded-2xl bg-brand-blue-700 p-6 text-white">
+            <div className="font-display text-4xl font-extrabold">{company.unitsInstalled}+</div>
+            <p className="mt-2 text-sm leading-relaxed text-brand-blue-100">
+              Unidades instaladas en distintos estados de la {company.regionsCovered}.
+            </p>
+          </article>
+        </div>
+      </Reveal>
+    </Section>
+  );
+}
