@@ -1,6 +1,6 @@
-import { Phone, Mail, MapPin, Navigation } from 'lucide-react';
+import { Phone, Mail, Navigation } from 'lucide-react';
 import { Seo } from '../components/seo/Seo';
-import { FacebookIcon, WhatsAppIcon } from '../components/ui/BrandIcons';
+import { FacebookIcon, WhatsAppIcon, MapsPinIcon } from '../components/ui/BrandIcons';
 import { CopyButton } from '../components/ui/CopyButton';
 import { SEO_BY_ROUTE } from '../lib/seoData';
 import { lorsamData } from '../data/lorsam';
@@ -8,8 +8,8 @@ import { PageHeader } from '../components/ui/PageHeader';
 import { Section } from '../components/ui/Section';
 import { Reveal } from '../components/ui/Reveal';
 import { telHref, waHref, mailHref, formatPhone } from '../lib/format';
-import { IMAGES } from '../lib/images';
 import { ERoute } from '../types';
+import contactoImage from '../assets/contacto.png';
 
 /** Google Maps directions URL for the office address. */
 function mapsHref(query: string): string {
@@ -31,7 +31,7 @@ export function ContactoPage(): React.JSX.Element {
         eyebrow="Contacto"
         title="Hablemos de tu proyecto"
         lead="Estamos listos para brindarte asesoría técnica y una cotización sin compromiso. Elige el canal que prefieras."
-        imageId={IMAGES.office}
+        image={contactoImage}
       />
 
       <Section tone="mist" ariaLabel="Canales de contacto">
@@ -46,8 +46,14 @@ export function ContactoPage(): React.JSX.Element {
               <ul className="mt-4 space-y-2">
                 {contact.office.map((phone) => (
                   <li key={phone}>
-                    <a href={telHref(phone)} className="text-graphite transition-colors hover:text-brand-blue-700">
-                      {formatPhone(phone)}
+                    <a
+                      href={telHref(phone)}
+                      className="flex items-center gap-3 rounded-xl border border-fog px-3 py-2.5 transition-colors hover:border-brand-blue-200 hover:bg-brand-blue-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue-500"
+                    >
+                      <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-blue-100 text-brand-blue-700">
+                        <Phone className="h-4 w-4" aria-hidden focusable={false} />
+                      </span>
+                      <span className="font-semibold text-ink">{formatPhone(phone)}</span>
                     </a>
                   </li>
                 ))}
@@ -63,15 +69,18 @@ export function ContactoPage(): React.JSX.Element {
               </span>
               <h2 className="text-lg font-bold text-ink">WhatsApp</h2>
               <ul className="mt-4 space-y-2">
-                {contact.whatsapp.map((phone, i) => (
+                {contact.whatsapp.map((phone) => (
                   <li key={phone}>
                     <a
                       href={waHref(phone, waMessage)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-graphite transition-colors hover:text-green-600"
+                      className="flex items-center gap-3 rounded-xl border border-fog px-3 py-2.5 transition-colors hover:border-green-200 hover:bg-green-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
                     >
-                      Línea {i + 1}: {formatPhone(phone)}
+                      <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-green-100 text-green-600">
+                        <WhatsAppIcon className="h-4 w-4" />
+                      </span>
+                      <span className="font-semibold text-ink">{formatPhone(phone)}</span>
                     </a>
                   </li>
                 ))}
@@ -86,27 +95,32 @@ export function ContactoPage(): React.JSX.Element {
                 <Mail className="h-6 w-6" aria-hidden focusable={false} />
               </span>
               <h2 className="text-lg font-bold text-ink">Correo</h2>
-              <div className="mt-2 space-y-2">
-                <div className="flex items-center gap-2">
+              <div className="mt-4 space-y-2">
+                <div className="flex items-center gap-3 rounded-xl border border-fog px-3 py-2.5">
+                  <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-blue-100 text-brand-blue-700">
+                    <Mail className="h-4 w-4" aria-hidden focusable={false} />
+                  </span>
                   <a
                     href={mailHref(contact.email, 'Cotización de proyecto HVAC/R')}
-                    className="break-all text-graphite transition-colors hover:text-brand-blue-700"
+                    className="break-all font-semibold text-ink transition-colors hover:text-brand-blue-700"
                   >
                     {contact.email}
                   </a>
-                  <CopyButton value={contact.email} label="correo" />
+                  <CopyButton value={contact.email} label="correo" className="ml-auto" />
                 </div>
               </div>
               <h2 className="mt-3 text-lg font-bold text-ink">Redes</h2>
-              <div className="mt-2 space-y-2">
+              <div className="mt-4 space-y-2">
                 <a
                   href={contact.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-graphite transition-colors hover:text-brand-blue-700"
+                  className="flex items-center gap-3 rounded-xl border border-fog px-3 py-2.5 transition-colors hover:border-brand-blue-200 hover:bg-brand-blue-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue-500"
                 >
-                  <FacebookIcon className="h-4 w-4" />
-                  Facebook
+                  <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-blue-100 text-brand-blue-700">
+                    <FacebookIcon className="h-4 w-4" />
+                  </span>
+                  <span className="font-semibold text-ink">Facebook</span>
                 </a>
               </div>
             </article>
@@ -117,8 +131,8 @@ export function ContactoPage(): React.JSX.Element {
         <Reveal delay={0.1}>
           <article className="mt-6 flex flex-col gap-6 rounded-2xl border border-fog bg-white p-7 shadow-sm sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-start gap-4">
-              <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-blue-600 text-white">
-                <MapPin className="h-6 w-6" aria-hidden focusable={false} />
+              <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-blue-100">
+                <MapsPinIcon className="h-8 w-8" />
               </span>
               <div>
                 <h2 className="text-lg font-bold text-ink">Dirección</h2>

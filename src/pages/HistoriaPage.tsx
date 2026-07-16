@@ -8,8 +8,8 @@ import { Reveal } from '../components/ui/Reveal';
 import { Icon } from '../components/ui/Icon';
 import { Stat } from '../components/ui/Stat';
 import { ContactoCTA } from '../components/sections/ContactoCTA';
-import { IMAGES } from '../lib/images';
 import { ERoute } from '../types';
+import historiaImage from '../assets/historia.png';
 
 /**
  * Historia page — narrative intro, a vertical milestone timeline, the technical
@@ -25,7 +25,7 @@ export function HistoriaPage(): React.JSX.Element {
         eyebrow="Nuestra Historia"
         title={history.headline}
         lead={history.intro[0]}
-        imageId={IMAGES.industrial}
+        image={historiaImage}
       />
 
       <Section tone="white" ariaLabel="Reseña histórica">
@@ -48,7 +48,7 @@ export function HistoriaPage(): React.JSX.Element {
             <li key={event.name} className="relative pb-10 pl-8 last:pb-0">
               <span
                 aria-hidden
-                className="absolute -left-[9px] top-1.5 inline-flex h-4 w-4 items-center justify-center rounded-full bg-brand-red-500 ring-4 ring-mist"
+                className="absolute -left-2.25 top-1.5 inline-flex h-4 w-4 items-center justify-center rounded-full bg-brand-red-500 ring-4 ring-mist"
               />
               <Reveal delay={i * 0.05}>
                 <div className="flex flex-wrap items-baseline gap-x-3">

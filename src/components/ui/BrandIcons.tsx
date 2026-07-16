@@ -15,6 +15,23 @@ export function FacebookIcon({ className }: IBrandIconProps): React.JSX.Element 
 }
 
 /**
+ * Google Maps-style location pin (red teardrop, white core). Colors are
+ * fixed rather than `currentColor` so the mark reads as a map pin on any
+ * background. Decorative by default.
+ */
+export function MapsPinIcon({ className }: IBrandIconProps): React.JSX.Element {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden focusable={false}>
+      <path
+        fill="#EA4335"
+        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+      />
+      <circle cx="12" cy="9" r="2.5" fill="#FFFFFF" />
+    </svg>
+  );
+}
+
+/**
  * Inline WhatsApp glyph. lucide-react no longer ships third-party brand icons,
  * so brand marks are provided locally. Decorative by default.
  */

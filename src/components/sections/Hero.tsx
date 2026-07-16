@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, PhoneCall, Wrench } from 'lucide-react';
+import { PhoneCall, Wrench } from 'lucide-react';
 import { lorsamData } from '../../data/lorsam';
-import { IMAGES, unsplash } from '../../lib/images';
 import { CTAButton } from '../ui/CTAButton';
 import { Container } from '../ui/Container';
 import { Stat } from '../ui/Stat';
 import { ERoute } from '../../types';
+import homeImage from '../../assets/home.png';
 
 /**
  * Landing hero: brand statement, slogan, primary CTAs and headline stats over
@@ -18,10 +18,10 @@ export function Hero(): React.JSX.Element {
     <section aria-label="Presentación" className="relative isolate overflow-hidden bg-brand-blue-950 text-white">
       {/* Background image + overlays */}
       <img
-        src={unsplash(IMAGES.hero, 1800)}
+        src={homeImage}
         alt=""
         aria-hidden
-        className="absolute inset-0 -z-10 h-full w-full object-cover opacity-25"
+        className="absolute inset-0 -z-10 h-full w-full object-cover opacity-60"
         loading="eager"
         fetchPriority="high"
       />

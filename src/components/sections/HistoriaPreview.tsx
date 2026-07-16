@@ -1,10 +1,10 @@
 import { ArrowRight } from 'lucide-react';
 import { lorsamData } from '../../data/lorsam';
-import { IMAGES, unsplash } from '../../lib/images';
 import { Section } from '../ui/Section';
 import { Reveal } from '../ui/Reveal';
 import { CTAButton } from '../ui/CTAButton';
 import { ERoute } from '../../types';
+import evolucionImage from '../../assets/ourstory.png';
 
 /**
  * Home teaser for the company history: headline, first/last milestones and a
@@ -44,7 +44,7 @@ export function HistoriaPreview(): React.JSX.Element {
         <Reveal delay={0.1}>
           <div className="relative">
             <img
-              src={unsplash(IMAGES.industrial, 1000)}
+              src={evolucionImage}
               alt="Instalación industrial de sistemas de climatización"
               className="aspect-4/3 w-full rounded-2xl object-cover shadow-xl"
               loading="lazy"

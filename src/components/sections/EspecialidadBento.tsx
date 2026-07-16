@@ -1,6 +1,5 @@
 import { ArrowRight } from 'lucide-react';
 import { lorsamData } from '../../data/lorsam';
-import { IMAGES, unsplash } from '../../lib/images';
 import { cn } from '../../lib/cn';
 import { Section } from '../ui/Section';
 import { SectionHeading } from '../ui/SectionHeading';
@@ -8,6 +7,7 @@ import { Reveal } from '../ui/Reveal';
 import { Icon } from '../ui/Icon';
 import { CTAButton } from '../ui/CTAButton';
 import { ERoute } from '../../types';
+import ingenieriasImage from '../../assets/ingenierias.png';
 
 /** Grid span per catalog index to build the asymmetric bento layout. */
 const SPAN_BY_INDEX: Record<number, string> = {
@@ -35,7 +35,7 @@ export function EspecialidadBento(): React.JSX.Element {
           {/* Featured narrative tile */}
           <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-brand-blue-950 p-7 text-white sm:col-span-2 sm:row-span-2">
             <img
-              src={unsplash(IMAGES.engineering, 1000)}
+              src={ingenieriasImage}
               alt=""
               aria-hidden
               className="absolute inset-0 -z-10 h-full w-full object-cover opacity-30"

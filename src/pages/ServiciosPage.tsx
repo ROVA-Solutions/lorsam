@@ -9,8 +9,8 @@ import { Reveal } from '../components/ui/Reveal';
 import { Icon } from '../components/ui/Icon';
 import { ServiciosGrid } from '../components/sections/ServiciosGrid';
 import { ContactoCTA } from '../components/sections/ContactoCTA';
-import { IMAGES } from '../lib/images';
 import { ERoute } from '../types';
+import serviciosImage from '../assets/servicios.png';
 
 /**
  * Servicios page — full service catalog, technical coverage checklist and the
@@ -26,7 +26,7 @@ export function ServiciosPage(): React.JSX.Element {
         eyebrow="Servicios"
         title="Ingeniería, instalación y mantenimiento HVAC/R"
         lead="Cubrimos todo el ciclo de vida de tus sistemas de climatización y refrigeración con técnicos certificados y estricto cumplimiento de presupuesto."
-        imageId={IMAGES.technician}
+        image={serviciosImage}
       />
 
       <Section tone="white" ariaLabel="Catálogo de servicios">

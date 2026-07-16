@@ -7,8 +7,8 @@ import { Reveal } from '../components/ui/Reveal';
 import { Icon } from '../components/ui/Icon';
 import { Stat } from '../components/ui/Stat';
 import { ContactoCTA } from '../components/sections/ContactoCTA';
-import { IMAGES } from '../lib/images';
 import { ERoute } from '../types';
+import clientesImage from '../assets/clientes.png';
 
 /**
  * Clientes page — sectors served, each with its representative clients, plus a
@@ -24,7 +24,7 @@ export function ClientesPage(): React.JSX.Element {
         eyebrow="Nuestros Clientes"
         title="Proyectos de misión crítica en México"
         lead={clients.intro}
-        imageId={IMAGES.corporate}
+        image={clientesImage}
       />
 
       <Section tone="blue-deep" ariaLabel="Alcance nacional">
