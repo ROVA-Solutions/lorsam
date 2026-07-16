@@ -15,7 +15,7 @@ export function PorQueElegirnos(): React.JSX.Element {
       <SectionHeading
         invert
         eyebrow="Valor Agregado"
-        title="Por qué LORSAM ?"
+        title="¿ POR QUÉ LORSAM ?"
         lead="Tres pilares que respaldan la continuidad operativa y el retorno de inversión de tu empresa."
       />
 
