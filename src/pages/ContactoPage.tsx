@@ -9,7 +9,7 @@ import { Section } from '../components/ui/Section';
 import { Reveal } from '../components/ui/Reveal';
 import { telHref, waHref, mailHref, formatPhone } from '../lib/format';
 import { ERoute } from '../types';
-import contactoImage from '../assets/contacto.png';
+import contactoImage from '../assets/contacto.webp';
 
 /** Google Maps directions URL for the office address. */
 function mapsHref(query: string): string {

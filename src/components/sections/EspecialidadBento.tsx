@@ -7,7 +7,7 @@ import { Reveal } from '../ui/Reveal';
 import { Icon } from '../ui/Icon';
 import { CTAButton } from '../ui/CTAButton';
 import { ERoute } from '../../types';
-import ingenieriasImage from '../../assets/ingenierias.png';
+import ingenieriasImage from '../../assets/ingenierias.webp';
 
 /** Grid span per catalog index to build the asymmetric bento layout. */
 const SPAN_BY_INDEX: Record<number, string> = {

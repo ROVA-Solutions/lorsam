@@ -9,7 +9,7 @@ import { Icon } from '../components/ui/Icon';
 import { Stat } from '../components/ui/Stat';
 import { ContactoCTA } from '../components/sections/ContactoCTA';
 import { ERoute } from '../types';
-import historiaImage from '../assets/historia.png';
+import historiaImage from '../assets/historia.webp';
 
 /**
  * Historia page — narrative intro, a vertical milestone timeline, the technical

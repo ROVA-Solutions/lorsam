@@ -4,7 +4,7 @@ import { Section } from '../ui/Section';
 import { Reveal } from '../ui/Reveal';
 import { CTAButton } from '../ui/CTAButton';
 import { ERoute } from '../../types';
-import evolucionImage from '../../assets/ourstory.png';
+import evolucionImage from '../../assets/ourstory.webp';
 
 /**
  * Home teaser for the company history: headline, first/last milestones and a

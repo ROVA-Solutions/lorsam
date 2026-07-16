@@ -8,7 +8,7 @@ import { Icon } from '../components/ui/Icon';
 import { Stat } from '../components/ui/Stat';
 import { ContactoCTA } from '../components/sections/ContactoCTA';
 import { ERoute } from '../types';
-import clientesImage from '../assets/clientes.png';
+import clientesImage from '../assets/clientes.webp';
 
 /**
  * Clientes page — sectors served, each with its representative clients, plus a

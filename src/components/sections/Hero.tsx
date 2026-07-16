@@ -5,7 +5,7 @@ import { CTAButton } from '../ui/CTAButton';
 import { Container } from '../ui/Container';
 import { Stat } from '../ui/Stat';
 import { ERoute } from '../../types';
-import homeImage from '../../assets/home.png';
+import homeImage from '../../assets/home.webp';
 
 /**
  * Landing hero: brand statement, slogan, primary CTAs and headline stats over

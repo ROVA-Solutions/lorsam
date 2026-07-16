@@ -10,7 +10,7 @@ import { Icon } from '../components/ui/Icon';
 import { ServiciosGrid } from '../components/sections/ServiciosGrid';
 import { ContactoCTA } from '../components/sections/ContactoCTA';
 import { ERoute } from '../types';
-import serviciosImage from '../assets/servicios.png';
+import serviciosImage from '../assets/servicios.webp';
 
 /**
  * Servicios page — full service catalog, technical coverage checklist and the
