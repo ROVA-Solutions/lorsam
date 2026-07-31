@@ -31,7 +31,7 @@ export function HistoriaPage(): React.JSX.Element {
         </div>
       </Section>
 
-      <Section tone="mist" ariaLabel="Línea de tiempo">
+      {/* <Section tone="mist" ariaLabel="Línea de tiempo">
         <SectionHeading
           eyebrow="Trayectoria"
           title="Cuatro Décadas de Evolución"
@@ -58,7 +58,7 @@ export function HistoriaPage(): React.JSX.Element {
             </li>
           ))}
         </ol>
-      </Section>
+      </Section> */}
 
       <Section tone="white" ariaLabel="Evolución técnica">
         <SectionHeading
@@ -83,13 +83,13 @@ export function HistoriaPage(): React.JSX.Element {
         </div>
       </Section>
 
-      <Section tone="blue-deep" ariaLabel="Cifras">
+      {/* <Section tone="blue-deep" ariaLabel="Cifras">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           <Stat invert value={company.yearsExperience} label="Años de experiencia" />
           <Stat invert value={`${company.unitsInstalled}+`} label="Unidades VRF/TVR instaladas" />
           <Stat invert value={String(company.foundedYear)} label="Año de fundación" />
         </div>
-      </Section>
+      </Section> */}
 
       <ContactoCTA />
     </>

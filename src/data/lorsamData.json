@@ -41,8 +41,8 @@
     "headline": "Más de 40 Años de Evolución y Excelencia Térmica",
     "intro": [
       "Nuestro recorrido comenzó en 1982 con pasos firmes bajo el nombre de Climas y Refrigeración del Valle. A lo largo de las décadas, nuestra vocación por el servicio y la adaptación a las nuevas tecnologías nos impulsaron a evolucionar continuamente.",
-      "Transitamos por etapas de gran crecimiento y transformación estructural —pasando por identidades como Refri-Valle y Servicios Generales y Aire Acondicionado— hasta consolidarnos estructural y corporativamente en el año 2025 como Multi Servicios y Climas Lorsam SA de CV.",
-      "Hoy, con más de cuatro décadas de herencia técnica, nos enorgullece ser líderes regionales en el sector de la climatización y refrigeración, manteniendo intacto nuestro compromiso fundacional: brindar bienestar, innovación y satisfacción total a cada cliente."
+      "Transitamos por etapas de gran crecimiento con transformación estructural —pasando por identidades como Refri-Valle, Servicios Generales, así como Aire Acondicionado— hasta consolidarnos corporativamente en el año 2025 bajo el nombre Multi Servicios y Climas Lorsam SA de CV.",
+      "Actualmente, con más de cuatro décadas de herencia técnica, nos enorgullece ser líderes regionales en el sector de la climatización e industria de refrigeración, manteniendo intacto nuestro compromiso fundacional: brindar bienestar, innovación, garantizando la satisfacción total a cada cliente."
     ],
     "timeline": [
       {
@@ -139,33 +139,32 @@
   ],
   "specialty": {
     "headline": "Ingeniería, Diseño e Implementación a Gran Escala",
-    "description": "Nos distinguimos por nuestra alta capacidad técnica en el cálculo, ingeniería e instalación de sistemas de volumen de refrigerante variable (VRF y TVR). Apoyados en software especializado de última generación, diseñamos proyectos precisos y fabricamos sistemas de ductería a la medida, garantizando un flujo de aire óptimo y la máxima eficiencia energética.",
+    "description": "Somos expertos en ingeniería, cálculo e instalación de sistemas VRF y TVR. Usamos software de vanguardia y fabricamos ductería a la medida para garantizar proyectos precisos, flujo de aire óptimo y máxima eficiencia energética.",
     "nationalBacking": "Gracias a nuestra capacidad logística y operativa, hemos instalado con éxito más de 500 unidades de estos sistemas en distintos estados de la República Mexicana, cumpliendo con los más altos estándares de calidad industrial y comercial.",
     "catalog": [
       {
+        "title": "Ingeniería, Diseño e Implementación a Gran Escala",
+        "detail": "Somos expertos en ingeniería, cálculo e instalación de sistemas VRF y TVR. Usamos software de vanguardia y fabricamos ductería a la medida para garantizar proyectos precisos, flujo de aire óptimo y máxima eficiencia energética."
+      },
+      {
         "title": "Volumen Variable (Sistemas VRF y TVR.)",
-        "detail": "Soluciones de climatización centralizada que permiten controlar la temperatura de cada zona de forma independiente. Son ideales para grandes edificaciones, garantizando un confort total con el máximo ahorro energético.",
-        "icon": "Fan"
+        "detail": "Soluciones de climatización centralizada que permiten controlar la temperatura de cada zona de forma independiente. Son ideales para grandes edificaciones, garantizando un confort total con el máximo ahorro energético."
       },
       {
         "title": "Climatización Comercial y Corporativa",
-        "detail": "Minisplits, Multi Splits, sistemas Divididos, unidades Paquete y tipo Cassette.",
-        "icon": "AirVent"
+        "detail": "Minisplits, Multi Splits, sistemas Divididos, unidades Paquete y tipo Cassette."
       },
       {
         "title": "Sistemas Aplicados (Chillers y Fan & Coils.)",
-        "detail": "Tecnología robusta diseñada para el control térmico de instalaciones a gran escala, como corporativos, hospitales o plantas industriales.",
-        "icon": "Droplets"
+        "detail": "Tecnología robusta diseñada para el control térmico de instalaciones a gran escala, como corporativos, hospitales o plantas industriales."
       },
       {
         "title": "Sistemas de ventilación, inyección y extracción industrial",
-        "detail": "Ingeniería enfocada en el diseño de redes óptimas para eliminar contaminantes, controlar temperaturas extremas y cumplir con las normas de salud y seguridad operativa.",
-        "icon": "Wind"
+        "detail": "Ingeniería enfocada en el diseño de redes óptimas para eliminar contaminantes, controlar temperaturas extremas y cumplir con las normas de salud y seguridad operativa."
       },
       {
         "title": "Refrigeración Especializada (Cuartos Fríos, Cámaras de Conservación y de Congelación)",
-        "detail": "Proyectos integrales para la cadena de frío con un control de temperatura preciso y confiable. Diseñados a la medida para garantizar la perfecta preservación de productos alimenticios, médicos o logísticos.",
-        "icon": "Snowflake"
+        "detail": "Proyectos integrales para la cadena de frío con un control de temperatura preciso y confiable. Diseñados a la medida para garantizar la perfecta preservación de productos alimenticios, médicos o logísticos."
       }
     ]
   },

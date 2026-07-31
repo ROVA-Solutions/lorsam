@@ -5,7 +5,7 @@ import type { INavLink } from '../types';
  * Splash screen visible duration in milliseconds.
  * Change this single constant to retune the intro animation length.
  */
-export const SPLASH_DURATION_MS = 4000;
+export const SPLASH_DURATION_MS = 3000;
 
 /** sessionStorage key used to show the splash only once per browser session. */
 export const SPLASH_SESSION_KEY = 'lorsam:splash-seen';

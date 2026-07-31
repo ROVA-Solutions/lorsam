@@ -27,13 +27,13 @@ export function ClientesPage(): React.JSX.Element {
         image={clientesImage}
       />
 
-      <Section tone="blue-deep" ariaLabel="Alcance nacional">
+      {/* <Section tone="blue-deep" ariaLabel="Alcance nacional">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           <Stat invert value={`${company.unitsInstalled}+`} label="Unidades instaladas" />
           <Stat invert value={String(clients.sectors.length)} label="Sectores atendidos" />
           <Stat invert value={company.yearsExperience} label="Años de experiencia" />
         </div>
-      </Section>
+      </Section> */}
 
       <Section tone="white" ariaLabel="Sectores y clientes">
         <div className="grid gap-6 lg:grid-cols-2">

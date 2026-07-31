@@ -24,7 +24,7 @@ export function HomePage(): React.JSX.Element {
       <ServiciosPreview />
       <PorQueElegirnos />
       <ClientesPreview />
-      <HistoriaPreview />
+      {/* <HistoriaPreview /> */}
       <ContactoCTA />
     </>
   );
