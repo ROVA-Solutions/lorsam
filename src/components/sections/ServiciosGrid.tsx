@@ -27,14 +27,15 @@ export function ServiciosGrid(): React.JSX.Element {
   const { services } = lorsamData;
 
   return (
-    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-2">
+    <div className="grid gap-5 auto-rows-auto grid-flow-row-dense sm:grid-cols-1 lg:grid-cols-3">
       {services.map((service, i) => (
         <Reveal key={service.title} delay={(i % 3) * 0.06} className="h-full">
           <FeatureCardImg
             title={service.title}
             description={service.description}
             image={SERVICE_IMAGE_BY_INDEX[i]}
-            size={EFeatureCardImgSize.Md}
+            size={EFeatureCardImgSize.Sm}
+            enableTransparecy={true}
           />
         </Reveal>
       ))}

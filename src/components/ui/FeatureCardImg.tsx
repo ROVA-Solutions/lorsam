@@ -9,6 +9,7 @@ interface IFeatureCardImgProps {
   /** Grid col/row span preset. @default EFeatureCardImgSize.Xl */
   size?: EFeatureCardImgSize;
   className?: string;
+  enableTransparecy?: boolean;
 }
 
 /**
@@ -21,6 +22,7 @@ export function FeatureCardImg({
   image,
   size = EFeatureCardImgSize.Xl,
   className,
+  enableTransparecy = false,
 }: IFeatureCardImgProps): React.JSX.Element {
   return (
     <article
@@ -37,10 +39,19 @@ export function FeatureCardImg({
         className="absolute inset-0 -z-10 h-full w-full object-cover"
         loading="lazy"
       />
-      <div
-        aria-hidden
-        className="absolute inset-x-0 bottom-0 -z-10 h-2/3 bg-linear-to-t from-brand-blue-950 via-brand-blue-950/80 via-60% to-transparent"
-      />
+
+      {enableTransparecy ? (
+        <div
+          aria-hidden
+          className="absolute inset-0 -z-10 bg-linear-to-br from-brand-blue-950 via-brand-blue-950/70 to-brand-blue-900/80"
+        />
+      ) : (
+        <div
+          aria-hidden
+          className="absolute inset-x-0 bottom-0 -z-10 h-2/3 bg-linear-to-t from-brand-blue-950 via-brand-blue-950/80 via-65% to-transparent"
+        />
+      )}
+
       <div className="p-6">
         <h3 className="text-2xl font-bold leading-tight text-white sm:text-3xl">{title}</h3>
         <p className="mt-1 text-lg leading-relaxed text-brand-blue-100">{description}</p>
