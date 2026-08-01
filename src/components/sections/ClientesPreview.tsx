@@ -5,6 +5,7 @@ import { SectionHeading } from '../ui/SectionHeading';
 import { Reveal } from '../ui/Reveal';
 import { Icon } from '../ui/Icon';
 import { CTAButton } from '../ui/CTAButton';
+import { ClientsCarousel } from '../ui/ClientsCarousel';
 import { ERoute } from '../../types';
 
 /**
@@ -35,7 +36,9 @@ export function ClientesPreview(): React.JSX.Element {
         ))}
       </div>
 
-      <div className="mt-12 flex justify-center">
+      <ClientsCarousel className="mt-20" />
+
+      <div className="mt-20 flex justify-center">
         <CTAButton to={ERoute.Clientes} variant="secondary" size="lg">
           Ver proyectos y clientes
           <ArrowRight className="h-5 w-5" aria-hidden focusable={false} />

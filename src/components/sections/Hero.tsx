@@ -21,7 +21,7 @@ export function Hero(): React.JSX.Element {
         src={homeImage}
         alt=""
         aria-hidden
-        className="absolute inset-0 -z-10 h-full w-full object-cover opacity-60"
+        className="absolute inset-0 -z-10 h-full w-full object-cover opacity-90"
         loading="eager"
         fetchPriority="high"
       />
@@ -29,12 +29,12 @@ export function Hero(): React.JSX.Element {
         aria-hidden
         className="absolute inset-0 -z-10 bg-linear-to-br from-brand-blue-950 via-brand-blue-950/90 to-brand-blue-900/70"
       />
-      <div
+      {/* <div
         aria-hidden
         className="pointer-events-none absolute -right-32 top-0 -z-10 h-128 w-lg rounded-full bg-brand-red-500/15 blur-3xl"
-      />
+      /> */}
 
-      <Container className="py-24 sm:py-32 lg:py-40">
+      <Container className="py-10 sm:py-16 lg:py-24">
         <motion.div
           className="max-w-3xl"
           initial={{ opacity: 0, y: 24 }}
@@ -66,16 +66,17 @@ export function Hero(): React.JSX.Element {
           </div>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           className="mt-16 grid max-w-2xl grid-cols-3 gap-6 border-t border-white/10 pt-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
           <Stat invert value={`${company.yearsExperience}`} label="Años de experiencia" />
+          <Stat invert value={`CIENTOS+`} label="de equipos instalados" />
           <Stat invert value={`${company.unitsInstalled}+`} label="Unidades VRF/TVR instaladas" />
-          <Stat invert value="7" label="Sectores atendidos" />
-        </motion.div>
+          <Stat invert value="1982" label="Año de fundación" />
+        </motion.div> */}
       </Container>
     </section>
   );
