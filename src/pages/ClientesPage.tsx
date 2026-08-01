@@ -5,7 +5,6 @@ import { PageHeader } from '../components/ui/PageHeader';
 import { Section } from '../components/ui/Section';
 import { Reveal } from '../components/ui/Reveal';
 import { Icon } from '../components/ui/Icon';
-import { Stat } from '../components/ui/Stat';
 import { ContactoCTA } from '../components/sections/ContactoCTA';
 import { ERoute } from '../types';
 import clientesImage from '../assets/clientes.webp';
@@ -16,7 +15,7 @@ import { ClientsCarousel } from '../components/ui/ClientsCarousel';
  * national-reach stat band.
  */
 export function ClientesPage(): React.JSX.Element {
-  const { clients, company } = lorsamData;
+  const { clients } = lorsamData;
 
   return (
     <>
@@ -27,14 +26,6 @@ export function ClientesPage(): React.JSX.Element {
         lead={clients.intro}
         image={clientesImage}
       />
-
-      {/* <Section tone="blue-deep" ariaLabel="Alcance nacional">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
-          <Stat invert value={`${company.unitsInstalled}+`} label="Unidades instaladas" />
-          <Stat invert value={String(clients.sectors.length)} label="Sectores atendidos" />
-          <Stat invert value={company.yearsExperience} label="Años de experiencia" />
-        </div>
-      </Section> */}
 
       <ClientsCarousel className="mt-20" />
 

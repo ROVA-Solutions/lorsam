@@ -6,7 +6,6 @@ import { Section } from '../components/ui/Section';
 import { SectionHeading } from '../components/ui/SectionHeading';
 import { Reveal } from '../components/ui/Reveal';
 import { Icon } from '../components/ui/Icon';
-import { Stat } from '../components/ui/Stat';
 import { ContactoCTA } from '../components/sections/ContactoCTA';
 import { ERoute } from '../types';
 import historiaImage from '../assets/historia.webp';
@@ -16,7 +15,7 @@ import historiaImage from '../assets/historia.webp';
  * evolution grid and headline stats.
  */
 export function HistoriaPage(): React.JSX.Element {
-  const { history, company } = lorsamData;
+  const { history } = lorsamData;
 
   return (
     <>
@@ -30,35 +29,6 @@ export function HistoriaPage(): React.JSX.Element {
           ))}
         </div>
       </Section>
-
-      {/* <Section tone="mist" ariaLabel="Línea de tiempo">
-        <SectionHeading
-          eyebrow="Trayectoria"
-          title="Cuatro Décadas de Evolución"
-          lead="De un taller local a líderes regionales en climatización y refrigeración."
-        />
-
-        <ol className="mx-auto mt-14 max-w-3xl space-y-2 border-l-2 border-brand-blue-200 pl-0">
-          {history.timeline.map((event, i) => (
-            <li key={event.name} className="relative pb-10 pl-8 last:pb-0">
-              <span
-                aria-hidden
-                className="absolute -left-2.25 top-1.5 inline-flex h-4 w-4 items-center justify-center rounded-full bg-brand-red-500 ring-4 ring-mist"
-              />
-              <Reveal delay={i * 0.05}>
-                <div className="flex flex-wrap items-baseline gap-x-3">
-                  <span className="font-display text-2xl font-extrabold text-brand-blue-700">{event.year || '—'}</span>
-                  <span className="rounded-full bg-brand-blue-100 px-3 py-0.5 text-xs font-semibold uppercase tracking-wide text-brand-blue-700">
-                    {event.stage}
-                  </span>
-                </div>
-                <h3 className="mt-1 text-lg font-semibold text-ink">{event.name}</h3>
-                <p className="mt-1 max-w-xl text-sm leading-relaxed text-steel">{event.description}</p>
-              </Reveal>
-            </li>
-          ))}
-        </ol>
-      </Section> */}
 
       <Section tone="white" ariaLabel="Evolución técnica">
         <SectionHeading
@@ -82,14 +52,6 @@ export function HistoriaPage(): React.JSX.Element {
           ))}
         </div>
       </Section>
-
-      {/* <Section tone="blue-deep" ariaLabel="Cifras">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
-          <Stat invert value={company.yearsExperience} label="Años de experiencia" />
-          <Stat invert value={`${company.unitsInstalled}+`} label="Unidades VRF/TVR instaladas" />
-          <Stat invert value={String(company.foundedYear)} label="Año de fundación" />
-        </div>
-      </Section> */}
 
       <ContactoCTA />
     </>
