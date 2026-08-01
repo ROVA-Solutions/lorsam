@@ -9,6 +9,7 @@ import { Stat } from '../components/ui/Stat';
 import { ContactoCTA } from '../components/sections/ContactoCTA';
 import { ERoute } from '../types';
 import clientesImage from '../assets/clientes.webp';
+import { ClientsCarousel } from '../components/ui/ClientsCarousel';
 
 /**
  * Clientes page — sectors served, each with its representative clients, plus a
@@ -34,6 +35,8 @@ export function ClientesPage(): React.JSX.Element {
           <Stat invert value={company.yearsExperience} label="Años de experiencia" />
         </div>
       </Section> */}
+
+      <ClientsCarousel className="mt-20" />
 
       <Section tone="white" ariaLabel="Sectores y clientes">
         <div className="grid gap-6 lg:grid-cols-2">
