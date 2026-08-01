@@ -6,7 +6,6 @@ import { ValoresCards } from '../components/sections/ValoresCards';
 import { ServiciosPreview } from '../components/sections/ServiciosPreview';
 import { PorQueElegirnos } from '../components/sections/PorQueElegirnos';
 import { ClientesPreview } from '../components/sections/ClientesPreview';
-import { HistoriaPreview } from '../components/sections/HistoriaPreview';
 import { ContactoCTA } from '../components/sections/ContactoCTA';
 import { ERoute } from '../types';
 
@@ -24,7 +23,6 @@ export function HomePage(): React.JSX.Element {
       <ServiciosPreview />
       <PorQueElegirnos />
       <ClientesPreview />
-      {/* <HistoriaPreview /> */}
       <ContactoCTA />
     </>
   );
