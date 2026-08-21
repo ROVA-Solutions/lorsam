@@ -121,7 +121,8 @@ export interface IAddress {
 export interface IContact {
   office: string[];
   whatsapp: string[];
-  email: string;
+  /** All published inboxes, in display order. First entry is the primary contact address. */
+  emails: string[];
   facebook: string;
   address: IAddress;
 }

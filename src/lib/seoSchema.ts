@@ -165,7 +165,7 @@ function organizationNode(): IJsonLdNode {
     priceRange: '$$$',
     currenciesAccepted: 'MXN',
     telephone: office[0],
-    email: contact.email,
+    email: contact.emails[0],
     address: postalAddress(),
     geo: {
       '@type': 'GeoCoordinates',

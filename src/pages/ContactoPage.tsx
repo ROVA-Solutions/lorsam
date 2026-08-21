@@ -98,18 +98,20 @@ export function ContactoPage(): React.JSX.Element {
               </span>
               <h2 className="text-lg font-bold text-ink">Correo</h2>
               <div className="mt-4 space-y-2">
-                <div className="flex items-center gap-3 rounded-xl border border-fog px-3 py-2.5">
-                  <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-blue-100 text-brand-blue-700">
-                    <Mail className="h-4 w-4" aria-hidden focusable={false} />
-                  </span>
-                  <a
-                    href={mailHref(contact.email, 'Cotización de proyecto HVAC/R')}
-                    className="break-all font-semibold text-ink transition-colors hover:text-brand-blue-700"
-                  >
-                    {contact.email}
-                  </a>
-                  <CopyButton value={contact.email} label="correo" className="ml-auto" />
-                </div>
+                {contact.emails.map((email) => (
+                  <div key={email} className="flex items-center gap-3 rounded-xl border border-fog px-3 py-2.5">
+                    <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-blue-100 text-brand-blue-700">
+                      <Mail className="h-4 w-4" aria-hidden focusable={false} />
+                    </span>
+                    <a
+                      href={mailHref(email, 'Cotización de proyecto HVAC/R')}
+                      className="break-all font-semibold text-ink transition-colors hover:text-brand-blue-700"
+                    >
+                      {email}
+                    </a>
+                    <CopyButton value={email} label="correo" className="ml-auto" />
+                  </div>
+                ))}
               </div>
               <h2 className="mt-3 text-lg font-bold text-ink">Redes</h2>
               <div className="mt-4 space-y-2">
