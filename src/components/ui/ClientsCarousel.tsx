@@ -30,7 +30,7 @@ export function ClientsCarousel({ className }: IClientsCarouselProps): React.JSX
     return (
       <div className={cn('flex flex-wrap items-center justify-center gap-8', className)} aria-hidden>
         {CLIENT_LOGOS.map((src, i) => (
-          <img key={i} src={src} alt="" loading="lazy" className="h-12 w-auto object-contain opacity-70 grayscale" />
+          <img key={i} src={src} alt="" loading="lazy" className="h-12 w-auto object-contain opacity-70" />
         ))}
       </div>
     );
@@ -55,7 +55,7 @@ export function ClientsCarousel({ className }: IClientsCarouselProps): React.JSX
             src={src}
             alt=""
             loading="lazy"
-            className="h-12 w-auto shrink-0 object-contain opacity-70 grayscale transition-opacity duration-300 hover:opacity-100"
+            className="h-12 w-auto shrink-0 object-contain opacity-70 transition-opacity duration-300 hover:opacity-100"
           />
         ))}
       </motion.div>

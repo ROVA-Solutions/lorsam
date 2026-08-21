@@ -1,4 +1,4 @@
-import { Phone, Mail, Navigation } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import { Seo } from '../components/seo/Seo';
 import { FacebookIcon, WhatsAppIcon, MapsPinIcon } from '../components/ui/BrandIcons';
 import { CopyButton } from '../components/ui/CopyButton';
@@ -12,9 +12,9 @@ import { ERoute } from '../types';
 import contactoImage from '../assets/contacto.webp';
 
 /** Google Maps directions URL for the office address. */
-function mapsHref(query: string): string {
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
-}
+// function mapsHref(query: string): string {
+//   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+// }
 
 /**
  * Contacto page — call, WhatsApp, email, social and address channels. Fully
@@ -138,12 +138,12 @@ export function ContactoPage(): React.JSX.Element {
                 <h2 className="text-lg font-bold text-ink">Dirección</h2>
                 <address className="mt-1 not-italic leading-relaxed text-steel">
                   {contact.address.street}
-                  <br />
-                  {contact.address.neighborhood}, {contact.address.city}, {contact.address.state}
+                  {/* <br />
+                  {contact.address.neighborhood}, {contact.address.city}, {contact.address.state} */}
                 </address>
               </div>
             </div>
-            <a
+            {/* <a
               href={mapsHref(contact.address.full)}
               target="_blank"
               rel="noopener noreferrer"
@@ -151,7 +151,7 @@ export function ContactoPage(): React.JSX.Element {
             >
               <Navigation className="h-4 w-4" aria-hidden focusable={false} />
               Cómo llegar
-            </a>
+            </a> */}
           </article>
         </Reveal>
       </Section>
