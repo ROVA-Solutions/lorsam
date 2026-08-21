@@ -103,13 +103,17 @@ export interface IClients {
   sectors: IClientSector[];
 }
 
-/** Structured postal address. */
+/** Structured postal address. Empty strings mark data not published on the site. */
 export interface IAddress {
   street: string;
   neighborhood: string;
   city: string;
   state: string;
+  /** ISO 3166-1 alpha-2 country code (e.g. `MX`). */
+  countryCode: string;
   country: string;
+  /** Mexican postal code. Empty until confirmed; omitted from JSON-LD when blank. */
+  postalCode: string;
   full: string;
 }
 
@@ -139,16 +143,37 @@ export interface ILorsamData {
 
 /** Per-route SEO metadata used by the `<Seo>` component. */
 export interface ISeoMeta {
+  /** Full `<title>` exactly as it should appear in the SERP — no template applied. */
   title: string;
   description: string;
   path: ERoute;
   /** Absolute or root-relative image used for Open Graph / Twitter cards. */
   image?: string;
+  /** Accessible description of `image`, emitted as `og:image:alt`. */
+  imageAlt?: string;
   keywords?: string[];
+  /** Short label used for this route inside the `BreadcrumbList` graph node. */
+  breadcrumbLabel?: string;
+  /** When true, emits `noindex, follow` instead of the indexable robots directive. */
+  noindex?: boolean;
 }
 
 /** A primary navigation entry. */
 export interface INavLink {
   label: string;
   to: ERoute;
+}
+
+/** A single question/answer pair rendered on-page and mirrored into `FAQPage` JSON-LD. */
+export interface IFaqItem {
+  question: string;
+  answer: string;
+}
+
+/**
+ * A schema.org node inside the site-wide `@graph`.
+ * Values are `unknown` rather than `any` so consumers must narrow before use.
+ */
+export interface IJsonLdNode {
+  [key: string]: unknown;
 }

@@ -6,6 +6,11 @@ interface IFeatureCardImgProps {
   description: string;
   /** Background image (imported asset URL). */
   image: string;
+  /**
+   * Descriptive alternative text for the background photograph. Required for
+   * image search indexing; when omitted the image is treated as decorative.
+   */
+  imageAlt?: string;
   /** Grid col/row span preset. @default EFeatureCardImgSize.Xl */
   size?: EFeatureCardImgSize;
   className?: string;
@@ -20,6 +25,7 @@ export function FeatureCardImg({
   title,
   description,
   image,
+  imageAlt,
   size = EFeatureCardImgSize.Xl,
   className,
   enableTransparecy = false,
@@ -34,10 +40,11 @@ export function FeatureCardImg({
     >
       <img
         src={image}
-        alt=""
-        aria-hidden
+        alt={imageAlt ?? ''}
+        aria-hidden={imageAlt ? undefined : true}
         className="absolute inset-0 -z-10 h-full w-full object-cover"
         loading="lazy"
+        decoding="async"
       />
 
       {enableTransparecy ? (

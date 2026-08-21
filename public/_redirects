@@ -1,1 +1,10 @@
+# Canonical host consolidation — all authority lands on https://www.lorsam.com
+# Absolute-URL sources are matched by Cloudflare Pages before any path rule.
+https://lorsam.com/*   https://www.lorsam.com/:splat   301!
+http://lorsam.com/*    https://www.lorsam.com/:splat   301!
+http://www.lorsam.com/*  https://www.lorsam.com/:splat  301!
+https://lorsam.pages.dev/*  https://www.lorsam.com/:splat  301!
+
+# Client-side router fallback: static assets are served first, everything else
+# renders the SPA shell with a 200 so deep links keep their canonical URL.
 /*  /index.html  200

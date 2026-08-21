@@ -10,23 +10,57 @@ export const SPLASH_DURATION_MS = 3000;
 /** sessionStorage key used to show the splash only once per browser session. */
 export const SPLASH_SESSION_KEY = 'lorsam:splash-seen';
 
-/** Canonical site origin, used for canonical URLs and Open Graph tags. */
+/** Canonical site origin, used for canonical URLs, JSON-LD `@id`s and Open Graph tags. */
 export const SITE_URL = 'https://www.lorsam.com';
 
-/** Default Open Graph share image (industry placeholder; replace with branded asset). */
-export const DEFAULT_OG_IMAGE =
-  'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200&auto=format&fit=crop';
+/** Default Open Graph share image (served from `/public`, mirrors the hero photograph). */
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-cover.webp`;
+
+/** Intrinsic dimensions and MIME type of {@link DEFAULT_OG_IMAGE}, required by Facebook/X scrapers. */
+export const OG_IMAGE = {
+  width: 1920,
+  height: 1072,
+  type: 'image/webp',
+  alt: 'LORSAM - Climatización y refrigeración industrial HVAC/R en Monterrey, Nuevo León',
+} as const;
+
+/** Absolute URL of the brand mark referenced by `Organization.logo`. */
+export const LOGO_URL = `${SITE_URL}/favicon.svg`;
+
+/** Approximate coordinates of the Santa Catarina, Nuevo León service base. */
+export const GEO_COORDINATES = {
+  latitude: 25.6766,
+  longitude: -100.4633,
+} as const;
+
+/** Stable `@id` anchors so every JSON-LD node can cross-reference the same entity. */
+export const SCHEMA_ID = {
+  website: `${SITE_URL}/#website`,
+  organization: `${SITE_URL}/#organization`,
+  logo: `${SITE_URL}/#logo`,
+} as const;
 
 /** Global site metadata defaults. */
 export const SITE = {
   name: 'LORSAM',
   legalName: 'Multi Servicios y Climas Lorsam SA de CV',
+  /** Open Graph locale format (underscore). */
   locale: 'es_MX',
-  titleTemplate: '%s | LORSAM',
-  defaultTitle: 'LORSAM | Soluciones HVAC/R · Climatización y Refrigeración Industrial',
+  /** BCP 47 language tag used by schema.org `inLanguage` and `<html lang>`. */
+  language: 'es-MX',
+  defaultTitle: 'LORSAM | Climatización y Refrigeración Industrial HVAC/R en Monterrey y México',
   defaultDescription:
-    'LORSAM: soluciones integrales HVAC/R en climatización, refrigeración, ventilación e ingeniería VRF/TVR para los sectores industrial, comercial y corporativo. Más de 40 años de experiencia.',
+    'LORSAM: climatización y refrigeración industrial HVAC/R en Monterrey, Santa Catarina y toda la República Mexicana. Sistemas VRF/TVR, chillers, cuartos fríos, ventilación y pólizas de mantenimiento. +40 años de experiencia.',
 } as const;
+
+/** Geographic markets the business actively serves, used by `areaServed`. */
+export const AREAS_SERVED = [
+  'Santa Catarina',
+  'Monterrey',
+  'San Pedro Garza García',
+  'Nuevo León',
+  'República Mexicana',
+] as const;
 
 /** Primary navigation, in funnel order. */
 export const NAV_LINKS: INavLink[] = [

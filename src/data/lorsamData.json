@@ -345,11 +345,13 @@
     "email": "climas_lorsam@hotmail.com",
     "facebook": "https://www.facebook.com/profile.php?id=61577167671892",
     "address": {
-      "street": "Estamos en Santa Catarina, sobre la Avenida Luis Donaldo Colosio.",
+      "street": "Avenida Luis Donaldo Colosio",
       "neighborhood": "",
-      "city": "",
-      "state": "",
-      "country": "",
+      "city": "Santa Catarina",
+      "state": "Nuevo León",
+      "countryCode": "MX",
+      "country": "México",
+      "postalCode": "",
       "full": "Estamos en Santa Catarina, sobre la Avenida Luis Donaldo Colosio."
     }
   }

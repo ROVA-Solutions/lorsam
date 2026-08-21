@@ -1,28 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
   <url>
     <loc>https://www.lorsam.com/</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://www.lorsam.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lorsam.com/" />
+    <image:image>
+      <image:loc>https://www.lorsam.com/og-cover.webp</image:loc>
+      <image:title>LORSAM - Climatización y refrigeración industrial HVAC/R en Monterrey</image:title>
+      <image:caption>Multi Servicios y Climas Lorsam SA de CV: ingeniería, instalación y mantenimiento de sistemas HVAC/R en Nuevo León y la República Mexicana.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lorsam.com/servicios</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.lorsam.com/historia</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://www.lorsam.com/servicios" />
+    <image:image>
+      <image:loc>https://www.lorsam.com/og-cover.webp</image:loc>
+      <image:title>Servicios HVAC/R LORSAM - VRF, chillers y mantenimiento industrial</image:title>
+      <image:caption>Asesoría técnica, ingeniería de proyectos, instalación, mantenimiento preventivo y pólizas integrales para sistemas de climatización y refrigeración.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lorsam.com/clientes</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://www.lorsam.com/clientes" />
+    <image:image>
+      <image:loc>https://www.lorsam.com/og-cover.webp</image:loc>
+      <image:title>Clientes y proyectos HVAC/R de LORSAM en México</image:title>
+      <image:caption>Proyectos de misión crítica en salud, industria, telecomunicaciones, gobierno, hospitalidad y retail.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.lorsam.com/contacto</loc>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://www.lorsam.com/contacto" />
+    <image:image>
+      <image:loc>https://www.lorsam.com/og-cover.webp</image:loc>
+      <image:title>Contacto LORSAM - Climatización industrial en Santa Catarina, Monterrey</image:title>
+      <image:caption>Teléfono, WhatsApp y correo para cotizar proyectos HVAC/R en Nuevo León y la República Mexicana.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lorsam.com/historia</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://www.lorsam.com/historia" />
+    <image:image>
+      <image:loc>https://www.lorsam.com/og-cover.webp</image:loc>
+      <image:title>Historia de LORSAM - más de 40 años en climatización y refrigeración</image:title>
+      <image:caption>De Climas y Refrigeración del Valle (1982) a Multi Servicios y Climas Lorsam SA de CV.</image:caption>
+    </image:image>
   </url>
 </urlset>

@@ -1,11 +1,42 @@
-# Long-lived immutable cache for Vite content-hashed assets
+# Vite content-hashed bundles — safe to cache forever.
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
-# Security headers for every response
+# Static media served from /public keeps its own filename, so revalidate daily
+# while still hitting the edge cache for a full year.
+/*.webp
+  Cache-Control: public, max-age=86400, stale-while-revalidate=31536000
+  X-Content-Type-Options: nosniff
+
+/*.svg
+  Cache-Control: public, max-age=86400, stale-while-revalidate=31536000
+  X-Content-Type-Options: nosniff
+
+# Crawler-facing files must never be served stale after a content update.
+/robots.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml; charset=utf-8
+
+/manifest.webmanifest
+  Cache-Control: public, max-age=3600
+  Content-Type: application/manifest+json; charset=utf-8
+
+# The SPA shell carries per-route meta, so it must always be revalidated.
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Baseline security + privacy headers for every response.
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
+  X-DNS-Prefetch-Control: on
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=()
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://images.unsplash.com; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; upgrade-insecure-requests

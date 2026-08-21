@@ -7,6 +7,7 @@ import { lorsamData } from '../data/lorsam';
 import { PageHeader } from '../components/ui/PageHeader';
 import { Section } from '../components/ui/Section';
 import { Reveal } from '../components/ui/Reveal';
+import { FaqSection } from '../components/sections/FaqSection';
 import { telHref, waHref, mailHref, formatPhone } from '../lib/format';
 import { ERoute } from '../types';
 import contactoImage from '../assets/contacto.webp';
@@ -29,9 +30,10 @@ export function ContactoPage(): React.JSX.Element {
       <Seo meta={SEO_BY_ROUTE[ERoute.Contacto]} />
       <PageHeader
         eyebrow="Contacto"
-        title="Hablemos de Tu Proyecto"
-        lead="Estamos listos para brindarte asesoría técnica y una cotización sin compromiso. Elige el canal que prefieras."
+        title="Cotiza tu Proyecto en Monterrey"
+        lead="Estamos listos para brindarte asesoría técnica y una cotización sin compromiso desde nuestra base en Santa Catarina, Nuevo León. Elige el canal que prefieras."
         image={contactoImage}
+        imageAlt="LORSAM - Contacto para cotizar climatización y refrigeración industrial en Santa Catarina, Monterrey"
       />
 
       <Section tone="mist" ariaLabel="Canales de contacto">
@@ -137,9 +139,10 @@ export function ContactoPage(): React.JSX.Element {
               <div>
                 <h2 className="text-lg font-bold text-ink">Dirección</h2>
                 <address className="mt-1 not-italic leading-relaxed text-steel">
+                  <span className="block font-semibold text-graphite">{lorsamData.company.legalName}</span>
                   {contact.address.street}
-                  {/* <br />
-                  {contact.address.neighborhood}, {contact.address.city}, {contact.address.state} */}
+                  <br />
+                  {contact.address.city}, {contact.address.state}, {contact.address.country}
                 </address>
               </div>
             </div>
@@ -155,6 +158,12 @@ export function ContactoPage(): React.JSX.Element {
           </article>
         </Reveal>
       </Section>
+
+      <FaqSection
+        route={ERoute.Contacto}
+        title="Preguntas Frecuentes Antes de Cotizar"
+        lead="Cómo pedir presupuesto, costos de asesoría, atención de emergencias y ubicación de LORSAM."
+      />
     </>
   );
 }

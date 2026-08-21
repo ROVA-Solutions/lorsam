@@ -20,10 +20,17 @@ export function HistoriaPage(): React.JSX.Element {
   return (
     <>
       <Seo meta={SEO_BY_ROUTE[ERoute.Historia]} />
-      <PageHeader eyebrow="Nuestra Historia" title={history.headline} lead={history.intro[0]} image={historiaImage} />
+      <PageHeader
+        eyebrow="Nuestra Historia"
+        title="+40 Años en Climatización y Refrigeración"
+        lead={history.intro[0]}
+        image={historiaImage}
+        imageAlt="LORSAM - Trayectoria desde 1982 en climatización y refrigeración industrial en Nuevo León"
+      />
 
       <Section tone="white" ariaLabel="Reseña histórica">
-        <div className="mx-auto max-w-3xl space-y-5 text-lg leading-relaxed text-graphite">
+        <SectionHeading eyebrow="Trayectoria" title={history.headline} />
+        <div className="mx-auto mt-10 max-w-3xl space-y-5 text-lg leading-relaxed text-graphite">
           {history.intro.slice(1).map((paragraph) => (
             <p key={paragraph.slice(0, 32)}>{paragraph}</p>
           ))}

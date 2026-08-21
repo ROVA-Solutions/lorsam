@@ -44,6 +44,7 @@ export function EspecialidadBento(): React.JSX.Element {
               title={item.title}
               description={item.detail}
               image={CATALOG_IMAGE_BY_INDEX[i]}
+              imageAlt={`LORSAM - ${item.title} en proyectos de climatización y refrigeración industrial`}
               size={EFeatureCardImgSize.Md}
               enableTransparecy={false}
             />

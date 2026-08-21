@@ -18,10 +18,10 @@ export function Hero(): React.JSX.Element {
       {/* Background image + overlays */}
       <img
         src={homeImage}
-        alt=""
-        aria-hidden
+        alt="LORSAM - Climatización y refrigeración industrial HVAC/R en Monterrey, Nuevo León"
         className="absolute inset-0 -z-10 h-full w-full object-cover opacity-90"
         loading="eager"
+        decoding="sync"
         fetchPriority="high"
       />
       <div
@@ -42,12 +42,18 @@ export function Hero(): React.JSX.Element {
           </p>
 
           <h1 className="text-balance font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl text-white">
-            {company.slogan}
+            LORSAM
+            <span className="block text-2xl sm:text-4xl">Climatización y Refrigeración Industrial en Monterrey</span>
           </h1>
 
-          <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-brand-blue-100 sm:text-xl">
+          <p className="mt-5 text-pretty text-xl font-semibold tracking-tight text-brand-red-400 sm:text-2xl">
+            {company.slogan}
+          </p>
+
+          <p className="mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-brand-blue-100 sm:text-xl">
             Soluciones integrales y ecológicas en climatización y refrigeración: ingeniería, instalación y mantenimiento
-            con tecnología de vanguardia para maximizar tu eficiencia energética.
+            de sistemas VRF/TVR, chillers y cuartos fríos con tecnología de vanguardia para maximizar tu eficiencia
+            energética en Nuevo León y toda la República Mexicana.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
