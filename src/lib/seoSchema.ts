@@ -199,6 +199,13 @@ function organizationNode(): IJsonLdNode {
         areaServed: 'MX',
         availableLanguage: ['es-MX'],
       })),
+      ...contact.emails.map((email) => ({
+        '@type': 'ContactPoint',
+        email,
+        contactType: 'customer service',
+        areaServed: 'MX',
+        availableLanguage: ['es-MX'],
+      })),
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
