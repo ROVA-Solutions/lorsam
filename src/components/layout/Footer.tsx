@@ -60,15 +60,17 @@ export function Footer(): React.JSX.Element {
                   WhatsApp
                 </a>
               </li>
-              <li>
-                <a
-                  href={mailHref(contact.email)}
-                  className="inline-flex items-center gap-2 break-all text-brand-blue-200 transition-colors hover:text-white"
-                >
-                  <Mail className="h-4 w-4 shrink-0" aria-hidden focusable={false} />
-                  {contact.email}
-                </a>
-              </li>
+              {contact.emails.map((email) => (
+                <li key={email}>
+                  <a
+                    href={mailHref(email)}
+                    className="inline-flex items-center gap-2 break-all text-brand-blue-200 transition-colors hover:text-white"
+                  >
+                    <Mail className="h-4 w-4 shrink-0" aria-hidden focusable={false} />
+                    {email}
+                  </a>
+                </li>
+              ))}
               <li className="flex items-start gap-2 text-brand-blue-200">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden focusable={false} />
                 <span>{contact.address.full}</span>

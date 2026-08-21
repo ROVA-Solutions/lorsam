@@ -51,9 +51,9 @@ function keywords(specific: readonly string[]): string[] {
 export const SEO_BY_ROUTE: Record<ERoute, ISeoMeta> = {
   [ERoute.Home]: {
     path: ERoute.Home,
-    title: 'LORSAM | Climatización y Refrigeración Industrial HVAC/R en Monterrey y México',
+    title: 'LORSAM | HVAC/R Climatización y Refrigeración Monterrey',
     description:
-      'LORSAM (Multi Servicios y Climas Lorsam): climatización y refrigeración industrial HVAC/R en Monterrey y toda la República Mexicana. Sistemas VRF/TVR, chillers, cuartos fríos y pólizas de mantenimiento. +40 años y +500 unidades instaladas.',
+      'LORSAM: climatización y refrigeración industrial HVAC/R en Monterrey y Nuevo León. Sistemas VRF/TVR, chillers, cuartos fríos. +40 años, 500+ instalaciones.',
     breadcrumbLabel: 'Inicio',
     keywords: keywords([
       'climatizacion industrial monterrey',
@@ -65,9 +65,9 @@ export const SEO_BY_ROUTE: Record<ERoute, ISeoMeta> = {
   },
   [ERoute.Servicios]: {
     path: ERoute.Servicios,
-    title: 'Servicios HVAC/R · VRF, Chillers y Mantenimiento Industrial | LORSAM',
+    title: 'Servicios HVAC/R Monterrey: VRF, Chillers | LORSAM',
     description:
-      'Ingeniería, instalación, mantenimiento preventivo y correctivo de sistemas HVAC/R: VRF/TVR, chillers, torres de enfriamiento, cuartos fríos, ductería y ventilación industrial. Pólizas de mantenimiento en Monterrey y Nuevo León.',
+      'Ingeniería, instalación y mantenimiento HVAC/R en Monterrey: VRF/TVR, chillers, cuartos fríos y ventilación industrial. Pólizas de mantenimiento con LORSAM.',
     breadcrumbLabel: 'Servicios',
     keywords: keywords([
       'mantenimiento de chillers',
@@ -81,9 +81,9 @@ export const SEO_BY_ROUTE: Record<ERoute, ISeoMeta> = {
   },
   [ERoute.Historia]: {
     path: ERoute.Historia,
-    title: 'Nuestra Historia · +40 Años en Climatización y Refrigeración | LORSAM',
+    title: 'Nuestra Historia · +40 Años en Climatización | LORSAM',
     description:
-      'De Climas y Refrigeración del Valle (1982) a Multi Servicios y Climas Lorsam SA de CV: cuatro décadas de evolución técnica en climatización y refrigeración industrial, líderes regionales del sector HVAC/R en Nuevo León.',
+      'De Climas y Refrigeración del Valle (1982) a LORSAM: cuatro décadas de evolución técnica en climatización y refrigeración industrial en Nuevo León.',
     breadcrumbLabel: 'Historia',
     keywords: keywords([
       'historia lorsam',
@@ -94,9 +94,9 @@ export const SEO_BY_ROUTE: Record<ERoute, ISeoMeta> = {
   },
   [ERoute.Clientes]: {
     path: ERoute.Clientes,
-    title: 'Clientes y Proyectos HVAC/R en México · Hospitales, Industria y Edificios | LORSAM',
+    title: 'Clientes HVAC/R en México · Hospitales e Industria | LORSAM',
     description:
-      'Proyectos HVAC/R de misión crítica para IMSS, CFE, LG Industrial Systems, torres corporativas, data centers y cadena de frío. Más de 500 unidades instaladas en la República Mexicana.',
+      'LORSAM respalda proyectos HVAC/R de misión crítica para IMSS, CFE y torres corporativas en México. +500 unidades instaladas en climatización y refrigeración.',
     breadcrumbLabel: 'Clientes',
     keywords: keywords([
       'proyectos hvac hospitales monterrey',
@@ -108,9 +108,9 @@ export const SEO_BY_ROUTE: Record<ERoute, ISeoMeta> = {
   },
   [ERoute.Contacto]: {
     path: ERoute.Contacto,
-    title: 'Cotiza tu Proyecto HVAC/R · Climas LORSAM Santa Catarina | LORSAM',
+    title: 'Contacto LORSAM · Cotiza HVAC/R en Santa Catarina',
     description:
-      'Contacta a LORSAM por teléfono, WhatsApp o correo para cotizar tu proyecto de climatización o refrigeración industrial. Base de operaciones en Santa Catarina, Nuevo León; cobertura en toda la República Mexicana.',
+      'Cotiza tu proyecto de climatización o refrigeración industrial con LORSAM: teléfono, WhatsApp y correo. Base en Santa Catarina, Nuevo León, cobertura nacional.',
     breadcrumbLabel: 'Contacto',
     keywords: keywords([
       'cotizar aire acondicionado industrial monterrey',
