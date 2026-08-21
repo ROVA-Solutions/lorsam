@@ -6,6 +6,7 @@ import { Section } from '../components/ui/Section';
 import { SectionHeading } from '../components/ui/SectionHeading';
 import { Reveal } from '../components/ui/Reveal';
 import { ContactoCTA } from '../components/sections/ContactoCTA';
+import { FaqSection } from '../components/sections/FaqSection';
 import { ERoute } from '../types';
 import serviciosImage from '../assets/servicios.webp';
 import asesoriaTecnicaImage from '../assets/asesoria_tecnica.webp';
@@ -55,9 +56,10 @@ export function ServiciosPage(): React.JSX.Element {
       <Seo meta={SEO_BY_ROUTE[ERoute.Servicios]} />
       <PageHeader
         eyebrow="Servicios"
-        title="Ingeniería, Instalación y Mantenimiento HVAC/R"
-        lead="Cubrimos todo el ciclo de vida de tus sistemas de climatización y refrigeración con técnicos certificados y estricto cumplimiento de presupuesto."
+        title="Ingeniería, Instalación y Mantenimiento Industrial"
+        lead="Cubrimos todo el ciclo de vida de tus sistemas de climatización y refrigeración en Monterrey y Nuevo León —VRF/TVR, chillers, cuartos fríos y ventilación— con técnicos certificados y estricto cumplimiento de presupuesto."
         image={serviciosImage}
+        imageAlt="LORSAM - Técnicos especializados en instalación y mantenimiento de sistemas HVAC/R industriales en Monterrey"
       />
       <Section tone="white" ariaLabel="Catálogo de servicios">
         <SectionHeading
@@ -74,6 +76,7 @@ export function ServiciosPage(): React.JSX.Element {
                 image={SERVICE_IMAGE_BY_INDEX[i]}
                 size={EFeatureCardImgSize.Lg}
                 enableTransparecy={false}
+                imageAlt={`LORSAM - ${service.title} en climatización y refrigeración industrial, Monterrey`}
               />
             </Reveal>
           ))}
@@ -94,10 +97,16 @@ export function ServiciosPage(): React.JSX.Element {
               image={CATALOG_IMAGE_BY_INDEX[i]}
               size={EFeatureCardImgSize.Lg}
               enableTransparecy={false}
+              imageAlt={`LORSAM - ${item.title} para proyectos HVAC/R industriales y comerciales`}
             />
           ))}
         </div>
       </Section>
+      <FaqSection
+        route={ERoute.Servicios}
+        title="Preguntas Frecuentes Sobre Servicios HVAC/R"
+        lead="Pólizas, chillers, sistemas VRF y cobertura: lo que más nos preguntan antes de cotizar."
+      />
       <ContactoCTA />
     </>
   );

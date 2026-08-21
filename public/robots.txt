@@ -1,4 +1,21 @@
+# robots.txt — https://www.lorsam.com
+# Multi Servicios y Climas Lorsam SA de CV
+
 User-agent: *
 Allow: /
+Disallow: /api/
+
+# Explicit allowances for the main search crawlers
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
 
 Sitemap: https://www.lorsam.com/sitemap.xml
+Host: https://www.lorsam.com

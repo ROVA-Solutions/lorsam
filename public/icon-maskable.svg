@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-label="LORSAM">
+  <rect width="512" height="512" fill="#123d7e"/>
+  <g transform="translate(124 128) scale(4)">
+    <rect x="14" y="12" width="7" height="40" rx="3.5" fill="#ffffff"/>
+    <rect x="14" y="45" width="28" height="7" rx="3.5" fill="#ffffff"/>
+    <rect x="45" y="12" width="7" height="40" rx="3.5" fill="#e11d2a"/>
+  </g>
+</svg>

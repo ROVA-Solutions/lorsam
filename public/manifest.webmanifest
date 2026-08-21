@@ -1,0 +1,41 @@
+{
+  "id": "/",
+  "name": "LORSAM - Soluciones HVAC/R",
+  "short_name": "LORSAM",
+  "description": "Climatización y refrigeración industrial HVAC/R en Monterrey, Nuevo León y toda la República Mexicana. Sistemas VRF/TVR, chillers, cuartos fríos, ventilación y pólizas de mantenimiento.",
+  "lang": "es-MX",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0b1f3f",
+  "theme_color": "#123d7e",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Servicios HVAC/R",
+      "short_name": "Servicios",
+      "url": "/servicios"
+    },
+    {
+      "name": "Contacto y cotizaciones",
+      "short_name": "Contacto",
+      "url": "/contacto"
+    }
+  ]
+}

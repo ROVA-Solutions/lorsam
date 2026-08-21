@@ -342,15 +342,17 @@
   "contact": {
     "office": ["8140508085", "8114096175"],
     "whatsapp": ["8132665496", "8132673228", "8132667010"],
-    "email": "administracion@lorsam.com",
+    "email": "climas_lorsam@hotmail.com",
     "facebook": "https://www.facebook.com/profile.php?id=61577167671892",
     "address": {
-      "street": "Av Luis Donaldo Colosio 1206, L-27",
-      "neighborhood": "Lomas Del Poniente",
+      "street": "Avenida Luis Donaldo Colosio",
+      "neighborhood": "",
       "city": "Santa Catarina",
       "state": "Nuevo León",
+      "countryCode": "MX",
       "country": "México",
-      "full": "Av Luis Donaldo Colosio 1206, L-27, Lomas Del Poniente, Santa Catarina, N.L."
+      "postalCode": "",
+      "full": "Estamos en Santa Catarina, sobre la Avenida Luis Donaldo Colosio."
     }
   }
 }

@@ -45,9 +45,10 @@ export function HistoriaPreview(): React.JSX.Element {
           <div className="relative">
             <img
               src={evolucionImage}
-              alt="Instalación industrial de sistemas de climatización"
+              alt="LORSAM - Instalación industrial de sistemas de climatización y refrigeración en Nuevo León"
               className="aspect-4/3 w-full rounded-2xl object-cover shadow-xl"
               loading="lazy"
+              decoding="async"
             />
             <div className="absolute -bottom-6 -left-6 rounded-2xl bg-brand-blue-700 px-7 py-5 text-white shadow-lg">
               <div className="font-display text-4xl font-extrabold">{company.yearsExperience}</div>

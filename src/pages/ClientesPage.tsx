@@ -22,9 +22,10 @@ export function ClientesPage(): React.JSX.Element {
       <Seo meta={SEO_BY_ROUTE[ERoute.Clientes]} />
       <PageHeader
         eyebrow="Nuestros Clientes"
-        title="Proyectos de Misión Crítica en México"
+        title="Nuestros Clientes y Proyectos."
         lead={clients.intro}
         image={clientesImage}
+        imageAlt="LORSAM - Proyectos HVAC/R de misión crítica en hospitales, industria y edificios corporativos de México"
       />
 
       <ClientsCarousel className="mt-20" />

@@ -1,16 +1,18 @@
 import { Home } from 'lucide-react';
+import { Seo } from '../components/seo/Seo';
+import { SEO_NOT_FOUND } from '../lib/seoData';
 import { Container } from '../components/ui/Container';
 import { CTAButton } from '../components/ui/CTAButton';
 import { ERoute } from '../types';
 
 /**
- * 404 route — friendly message and a route back to Home.
+ * 404 route — friendly message and a route back to Home. Explicitly de-indexed
+ * (`noindex, follow`) so soft-404s never dilute the brand result set.
  */
 export function NotFoundPage(): React.JSX.Element {
   return (
     <>
-      <title>Página no encontrada | LORSAM</title>
-      <meta name="robots" content="noindex" />
+      <Seo meta={SEO_NOT_FOUND} />
       <section className="flex min-h-[70vh] items-center bg-brand-blue-950 text-white">
         <Container className="py-24 text-center">
           <p className="font-display text-7xl font-extrabold text-brand-red-400 sm:text-9xl">404</p>

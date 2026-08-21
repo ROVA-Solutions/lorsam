@@ -10,11 +10,17 @@ interface IPageHeaderProps {
   imageId?: string;
   /** Direct background image source (e.g. a bundled asset import). Takes precedence over `imageId`. */
   image?: string;
+  /**
+   * Descriptive alternative text for the background photograph. Required for
+   * image search indexing; when omitted the image is treated as decorative.
+   */
+  imageAlt?: string;
 }
 
 /**
  * Compact page header used by detail routes: eyebrow, H1 and lead over a
- * dark-blue band with a subtle industrial background image.
+ * dark-blue band with a subtle industrial background image. The photograph is
+ * the route LCP element, so it is fetched eagerly at high priority.
  */
 export function PageHeader({
   eyebrow,
@@ -22,15 +28,18 @@ export function PageHeader({
   lead,
   imageId = IMAGES.rooftopUnits,
   image,
+  imageAlt,
 }: IPageHeaderProps): React.JSX.Element {
   return (
     <header className="relative isolate overflow-hidden bg-brand-blue-950 text-white">
       <img
         src={image ?? unsplash(imageId, 1600)}
-        alt=""
-        aria-hidden
+        alt={imageAlt ?? ''}
+        aria-hidden={imageAlt ? undefined : true}
         className="absolute inset-0 -z-10 h-full w-full object-cover opacity-60"
         loading="eager"
+        decoding="sync"
+        fetchPriority="high"
       />
       <div
         aria-hidden

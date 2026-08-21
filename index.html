@@ -1,18 +1,121 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-MX">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#123d7e" />
+
+    <!--
+      Static SEO baseline.
+
+      Every tag flagged with `data-static-seo` is a crawler-facing fallback for
+      bots that do not execute JavaScript (WhatsApp, Slack, legacy social
+      scrapers). Once React mounts, `src/components/seo/Seo.tsx` removes them and
+      takes over with per-route values, so the document never carries duplicate
+      `<title>`, `description`, `canonical`, Open Graph or Twitter tags.
+    -->
+    <title data-static-seo>LORSAM | Climatización y Refrigeración Industrial HVAC/R en Monterrey y México</title>
     <meta
+      data-static-seo
       name="description"
-      content="LORSAM — Soluciones integrales HVAC/R: climatización, refrigeración, ventilación e ingeniería VRF/TVR para los sectores industrial, comercial y corporativo. Más de 40 años de experiencia."
+      content="LORSAM: climatización y refrigeración industrial HVAC/R en Monterrey, Santa Catarina y toda la República Mexicana. Sistemas VRF/TVR, chillers, cuartos fríos, ventilación y pólizas de mantenimiento. +40 años de experiencia."
     />
-    <title>LORSAM | Soluciones HVAC/R · Climatización y Refrigeración Industrial</title>
+    <meta
+      data-static-seo
+      name="keywords"
+      content="lorsam, climas lorsam, lorsam climas, multi servicios y climas lorsam, lorsam monterrey, climatizacion industrial monterrey, sistemas vrf monterrey, refrigeracion industrial santa catarina, mantenimiento de chillers, cuartos frios monterrey, polizas mantenimiento hvac, HVAC/R"
+    />
+    <meta data-static-seo name="author" content="Multi Servicios y Climas Lorsam SA de CV" />
+    <meta
+      data-static-seo
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      data-static-seo
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <link data-static-seo rel="canonical" href="https://www.lorsam.com/" />
+
+    <!-- Geo-targeting: Santa Catarina, Nuevo León, México -->
+    <meta name="geo.region" content="MX-NLE" />
+    <meta name="geo.placename" content="Santa Catarina, Monterrey, Nuevo León" />
+    <meta name="geo.position" content="25.6766;-100.4633" />
+    <meta name="ICBM" content="25.6766, -100.4633" />
+
+    <!-- Open Graph -->
+    <meta data-static-seo property="og:type" content="website" />
+    <meta data-static-seo property="og:site_name" content="LORSAM" />
+    <meta data-static-seo property="og:locale" content="es_MX" />
+    <meta
+      data-static-seo
+      property="og:title"
+      content="LORSAM | Climatización y Refrigeración Industrial HVAC/R en Monterrey y México"
+    />
+    <meta
+      data-static-seo
+      property="og:description"
+      content="Climatización y refrigeración industrial HVAC/R en Monterrey y toda la República Mexicana. Sistemas VRF/TVR, chillers, cuartos fríos y pólizas de mantenimiento. +40 años de experiencia."
+    />
+    <meta data-static-seo property="og:url" content="https://www.lorsam.com/" />
+    <meta data-static-seo property="og:image" content="https://www.lorsam.com/og-cover.webp" />
+    <meta data-static-seo property="og:image:type" content="image/webp" />
+    <meta data-static-seo property="og:image:width" content="1920" />
+    <meta data-static-seo property="og:image:height" content="1072" />
+    <meta
+      data-static-seo
+      property="og:image:alt"
+      content="LORSAM - Climatización y refrigeración industrial HVAC/R en Monterrey, Nuevo León"
+    />
+
+    <!-- Twitter / X -->
+    <meta data-static-seo name="twitter:card" content="summary_large_image" />
+    <meta
+      data-static-seo
+      name="twitter:title"
+      content="LORSAM | Climatización y Refrigeración Industrial HVAC/R en Monterrey y México"
+    />
+    <meta
+      data-static-seo
+      name="twitter:description"
+      content="Climatización y refrigeración industrial HVAC/R en Monterrey y toda la República Mexicana. Sistemas VRF/TVR, chillers, cuartos fríos y pólizas de mantenimiento."
+    />
+    <meta data-static-seo name="twitter:image" content="https://www.lorsam.com/og-cover.webp" />
+    <meta
+      data-static-seo
+      name="twitter:image:alt"
+      content="LORSAM - Climatización y refrigeración industrial HVAC/R en Monterrey, Nuevo León"
+    />
+
+    <!-- Icons, PWA and theming -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icon-maskable.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#123d7e" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="LORSAM" />
+    <meta name="application-name" content="LORSAM" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Third-party image origin used by fallback editorial photography -->
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <h1>LORSAM | Climatización y Refrigeración Industrial HVAC/R en Monterrey y México</h1>
+      <p>
+        Multi Servicios y Climas Lorsam SA de CV. Más de 40 años de experiencia en climatización, refrigeración y
+        ventilación industrial, comercial y corporativa. Sistemas VRF/TVR, chillers, cuartos fríos, torres de
+        enfriamiento y pólizas de mantenimiento preventivo. Santa Catarina, Monterrey, Nuevo León y toda la República
+        Mexicana.
+      </p>
+      <p>Teléfono: <a href="tel:+528140508085">+52 81 4050 8085</a></p>
+      <p>Correo: <a href="mailto:climas_lorsam@hotmail.com">climas_lorsam@hotmail.com</a></p>
+    </noscript>
   </body>
 </html>
