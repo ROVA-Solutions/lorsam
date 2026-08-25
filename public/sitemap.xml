@@ -6,7 +6,7 @@
 >
   <url>
     <loc>https://www.lorsam.com/</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://www.lorsam.com/" />
@@ -19,10 +19,11 @@
   </url>
   <url>
     <loc>https://www.lorsam.com/servicios</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://www.lorsam.com/servicios" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lorsam.com/servicios" />
     <image:image>
       <image:loc>https://www.lorsam.com/og-cover.webp</image:loc>
       <image:title>Servicios HVAC/R LORSAM - VRF, chillers y mantenimiento industrial</image:title>
@@ -31,10 +32,11 @@
   </url>
   <url>
     <loc>https://www.lorsam.com/clientes</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://www.lorsam.com/clientes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lorsam.com/clientes" />
     <image:image>
       <image:loc>https://www.lorsam.com/og-cover.webp</image:loc>
       <image:title>Clientes y proyectos HVAC/R de LORSAM en México</image:title>
@@ -43,10 +45,11 @@
   </url>
   <url>
     <loc>https://www.lorsam.com/contacto</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://www.lorsam.com/contacto" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lorsam.com/contacto" />
     <image:image>
       <image:loc>https://www.lorsam.com/og-cover.webp</image:loc>
       <image:title>Contacto LORSAM - Climatización industrial en Santa Catarina, Monterrey</image:title>
@@ -55,10 +58,11 @@
   </url>
   <url>
     <loc>https://www.lorsam.com/historia</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://www.lorsam.com/historia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lorsam.com/historia" />
     <image:image>
       <image:loc>https://www.lorsam.com/og-cover.webp</image:loc>
       <image:title>Historia de LORSAM - más de 40 años en climatización y refrigeración</image:title>

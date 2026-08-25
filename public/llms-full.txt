@@ -1,0 +1,129 @@
+# LORSAM — Dossier Técnico Completo y Base de Conocimiento HVAC/R
+
+Documento de referencia para sistemas de recuperación aumentada (RAG), agentes de búsqueda y motores de respuesta. Todos los datos provienen de la fuente maestra del sitio https://www.lorsam.com.
+
+## 1. Identidad corporativa
+
+- Razón social: Multi Servicios y Climas Lorsam SA de CV
+- Nombre comercial: LORSAM
+- Variantes de marca registradas históricamente: Climas y Refrigeración del Valle, Refri-Valle, Servicios Generales y Aire Acondicionado, Climas LORSAM, Lorsam Climas
+- Eslogan: "Innovación Térmica, Excelencia Operativa"
+- Año de fundación: 1982
+- Trayectoria: más de 40 años ininterrumpidos
+- Consolidación corporativa como Multi Servicios y Climas Lorsam SA de CV: 2025
+- Unidades de gran escala instaladas: más de 500 en distintos estados de la República Mexicana
+- Domicilio operativo: Avenida Luis Donaldo Colosio, Santa Catarina, Nuevo León, México
+- Coordenadas geográficas: latitud 25.6766, longitud -100.4633
+- Radio de servicio directo: 50 km alrededor de Santa Catarina (área metropolitana de Monterrey)
+- Idioma de operación: español de México (es-MX)
+- Moneda: peso mexicano (MXN)
+- Rango de inversión típico: $$$ (proyectos industriales y comerciales)
+- Formas de pago: transferencia bancaria, efectivo, tarjeta de crédito, tarjeta de débito
+
+## 2. Misión y visión
+
+**Misión.** Proveer soluciones integrales y ecológicas en sistemas HVAC/R, integrando tecnología de vanguardia y talento altamente especializado, para optimizar el confort, la eficiencia energética y la productividad operativa en los sectores industrial, comercial y corporativo.
+
+**Visión.** Posicionarse como líder referente en la industria de la climatización y refrigeración a nivel nacional, reconocida por excelencia técnica, capacidad de innovación sostenible y desarrollo continuo de procesos y servicios.
+
+**Valores.** Honestidad y transparencia; eficiencia operativa; responsabilidad; solidaridad y trabajo en equipo; lealtad.
+
+## 3. Línea de tiempo
+
+| Etapa | Año | Denominación | Descripción |
+|---|---|---|---|
+| Fundación | 1982 | Climas y Refrigeración del Valle | Inicio de operaciones y de la vocación por el servicio térmico. |
+| Evolución | — | Refri-Valle | Primera transformación estructural impulsada por el crecimiento técnico. |
+| Expansión | — | Servicios Generales y Aire Acondicionado | Ampliación hacia proyectos integrales de climatización. |
+| Consolidación | 2025 | Multi Servicios y Climas Lorsam SA de CV | Consolidación corporativa como LORSAM, líder regional del sector. |
+
+## 4. Catálogo detallado de soluciones
+
+1. **Sistemas VRF / TVR (volumen de refrigerante variable).** Cálculo, ingeniería, instalación y puesta en marcha para edificios corporativos, hospitales y desarrollos verticales. Control independiente por zona desde un solo circuito, con reducción del consumo eléctrico en cargas parciales. Se emplea software especializado de dimensionamiento y ductería fabricada a la medida.
+2. **Chillers y sistemas de agua helada.** Instalación, restauración y mantenimiento de chillers de placas y de casco y tubo, manejadoras de expansión directa, fan & coils y torres de enfriamiento industrial. Incluye análisis de eficiencia térmica, limpieza y restauración de intercambiadores, balanceo hidráulico y cálculo de repotenciación.
+3. **Mantenimiento preventivo y correctivo HVAC/R.** Diagnóstico térmico, detección de fugas, medición de parámetros eléctricos y de refrigerante, balanceo de flujo, ajuste de controles y reparación con tiempos de respuesta rápidos.
+4. **Pólizas de mantenimiento integral.** Inspecciones programadas, limpieza de serpentines y filtros, reporte técnico por visita, gestión de reparaciones y suministro de refacciones. Cada póliza se dimensiona por número de equipos, criticidad y nivel de disponibilidad requerido. Los clientes con póliza vigente reciben atención prioritaria y guardia técnica 24/7.
+5. **Cuartos fríos y cadena de frío.** Diseño, ensamble y calibración de cámaras de conservación y de congelación de grado alimentario, farmacéutico y logístico, con control preciso de temperatura y humedad, aislamiento, equipo de refrigeración, controles y puesta en marcha.
+6. **Ventilación, inyección y extracción industrial.** Redes de ductería y espiroductos, difusores, rejillas y compuertas de seguridad para eliminar contaminantes, controlar temperaturas extremas y cumplir normas de salud y seguridad operativa.
+7. **Climatización comercial y corporativa.** Minisplits, multi splits, sistemas divididos, unidades paquete y equipos tipo cassette para comercios, oficinas y desarrollos residenciales premium.
+8. **Ingeniería, asesoría y cálculo térmico.** Levantamiento en sitio, cálculo de carga térmica, diseño conceptual, desarrollo de proyecto ejecutivo y dirección de obra.
+
+### Equipos y sistemas cubiertos
+
+- Sistemas de expansión directa y de agua helada.
+- Sistemas VRF y TVR.
+- Chillers de placas y de casco y tubo.
+- Torres de enfriamiento industrial: cálculo, restauración y mantenimiento.
+- Sistemas de ductos, espiroductos, difusores, rejillas y compuertas.
+- Control de precisión de temperatura y humedad, programación automática y plantas eléctricas de emergencia.
+
+## 5. Cobertura geográfica
+
+**Atención directa:** Santa Catarina, Monterrey, San Pedro Garza García, San Nicolás de los Garza, Apodaca, General Escobedo, Guadalupe y García.
+
+**Cobertura estatal:** todo Nuevo León.
+
+**Cobertura nacional:** proyectos industriales en toda la República Mexicana, incluyendo obra ejecutada en Coahuila y Tamaulipas.
+
+## 6. Portafolio de clientes por sector
+
+**Salud e investigación clínica.** IMSS (decenas de clínicas, UMF y Hospitales Generales de Zona en Nuevo León), Hospital y Centro Médico San Jorge (Centro y Apodaca), CIBIN (Centro de Investigación Biomédica del Noreste), Constructora Monteliz (Clínicas 36 y 65).
+
+**Energía, gobierno y educación.** CFE Zona Oriente (sucursales, subestaciones y edificios administrativos), Municipio de General Escobedo (Presidencia, Torre Administrativa y Centro de Seguridad C4), Palacio de Justicia del Estado, Universidad Ciudadana de Nuevo León, guardería mixta en San Pedro Garza García, proyecto gubernamental en Francisco I. Madero (Torreón, Coahuila).
+
+**Misión crítica y telecomunicaciones.** Marcatel Internacional (casetas de precisión SAET), TICSA Comunicaciones, Comunicaciones Unifica.
+
+**Desarrollos verticales, inmobiliarias y arquitectura.** Torre Micrópolis, Torre Fuentes, Torre Planetario, Torre Martel, Torre Bosques, Torre Amazonas, Edificio Serena, Punto Central, Plaza Vita, Plaza Leones Premier, Inmobiliaria Olaf, Islas Canarias, KZ Ingeniería, Norman Miller Metropolitan Architecture, Grupo Premier Universal.
+
+**Industrial, logística y manufactura.** LG Industrial Systems, Transportadora Tres Generaciones, Express 57, Súper Express La Chicharra, Parque Industrial Escobedo, Grupo Gerimex, Tecno Servicios Diablo SA de CV, Forestal La Reforma.
+
+**Hospitalidad, gastronomía y entretenimiento.** Grupo Los Rieles (Saltillo, Lázaro Cárdenas, Revolución, Fleteros y Barragán), Mesón de la Guardia, Bar Bisou, Bar Jeromme, Rest. Las Aliadas, Rest. Figaro's Pizza, Operadora Turística San Nicolás (Hotel Grand Viator), Próxima Hoteles (Pesquería y Tampico).
+
+**Comercial, retail y residencial premium.** First Cash, Orsan del Norte (estaciones de servicio de Grupo Orsan), Terralta Club y Terralta Departamentos, residencias de alta gama en Chipinque y Del Valle, Impresos Publicitarios YGA, AFLEMS (Allende, N.L.).
+
+## 7. Diferenciadores
+
+- Tecnología y máxima eficiencia energética: equipos que maximizan el rendimiento térmico y reducen el consumo eléctrico.
+- Servicio integral garantizado: pólizas y garantías que aseguran la continuidad operativa.
+- Ejecución técnica especializada: personal capacitado y actualizado en normativas vigentes.
+
+## 8. Preguntas frecuentes
+
+**¿Qué es LORSAM y a qué se dedica?** LORSAM es una empresa mexicana de climatización y refrigeración industrial HVAC/R con base en Santa Catarina, Nuevo León. Su razón social es Multi Servicios y Climas Lorsam SA de CV y cubre cálculo térmico, ingeniería, instalación y pólizas de mantenimiento para los sectores industrial, comercial y corporativo.
+
+**¿Cuántos años de experiencia tiene?** Más de 40. Inició en 1982 como Climas y Refrigeración del Valle y se consolidó en 2025 bajo su razón social actual.
+
+**¿Qué incluye una póliza de mantenimiento HVAC?** Inspecciones programadas, limpieza de serpentines y filtros, medición de parámetros eléctricos y de refrigerante, ajuste de controles, reporte técnico por visita y gestión de reparaciones y refacciones.
+
+**¿Realizan mantenimiento de chillers y torres de enfriamiento?** Sí, preventivo y correctivo, incluyendo análisis de eficiencia térmica, restauración de intercambiadores, balanceo hidráulico y cálculo de repotenciación.
+
+**¿Qué ventaja tiene un sistema VRF o TVR?** Controla la temperatura de cada zona de forma independiente desde un solo circuito, reduce el consumo en cargas parciales, elimina múltiples condensadoras y simplifica la instalación en edificios verticales.
+
+**¿Diseñan cuartos fríos y cámaras de congelación?** Sí, proyectos integrales con aislamiento, equipo de refrigeración, controles y puesta en marcha para productos alimenticios, médicos y logísticos.
+
+**¿La cotización tiene costo?** No. La asesoría técnica inicial y la cotización son sin compromiso, con alcance y presupuesto entregados por escrito.
+
+**¿Atienden emergencias?** Sí. Existe mantenimiento correctivo con tiempos de respuesta rápidos, y los clientes con póliza vigente reciben atención prioritaria en equipos críticos.
+
+## 9. Canales oficiales de contacto (arquitectura sin formularios)
+
+El sitio no usa formularios ni recolecta datos: toda la conversión ocurre por enlace directo.
+
+- Teléfono conmutador: +52 81 4050 8085 (`tel:+528140508085`)
+- Teléfono secundario: +52 81 1409 6175 (`tel:+528114096175`)
+- WhatsApp ventas e ingeniería: +52 81 3266 5496 (https://wa.me/528132665496)
+- WhatsApp cotizaciones especiales: +52 81 3267 3228 (https://wa.me/528132673228)
+- WhatsApp pólizas y soporte crítico: +52 81 3266 7010 (https://wa.me/528132667010)
+- Correo principal: administracion@lorsam.com
+- Correo alterno: climas_@hotmail.com
+- Facebook: https://www.facebook.com/profile.php?id=61577167671892
+
+**Horario comercial.** Lunes a viernes de 08:00 a 18:00 h; sábado de 08:00 a 14:00 h; domingo cerrado. Guardia técnica 24/7 exclusiva para clientes con póliza de mantenimiento integral activa.
+
+## 10. Mapa del sitio
+
+- https://www.lorsam.com/ — Inicio
+- https://www.lorsam.com/servicios — Servicios HVAC/R
+- https://www.lorsam.com/historia — Historia desde 1982
+- https://www.lorsam.com/clientes — Clientes y proyectos
+- https://www.lorsam.com/contacto — Contacto y cotizaciones
