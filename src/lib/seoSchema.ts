@@ -4,14 +4,18 @@ import { SEO_BY_ROUTE } from './seoData';
 import { digitsOnly } from './format';
 import {
   AREAS_SERVED,
+  BRAND_ALTERNATE_NAMES,
   COUNTRY_CODE,
   DEFAULT_OG_IMAGE,
   GEO_COORDINATES,
+  KNOWS_ABOUT,
   LOGO_URL,
   OG_IMAGE,
   SCHEMA_ID,
+  SERVICE_RADIUS_METERS,
   SITE,
   SITE_URL,
+  SPEAKABLE_SELECTORS,
 } from './constants';
 import { ERoute } from '../types';
 import type { IJsonLdNode, ISeoMeta } from '../types';
@@ -59,6 +63,28 @@ const SERVICE_CATALOG: ReadonlyArray<{ name: string; description: string }> = [
       'Asesoría técnica, cálculo de carga térmica, diseño conceptual y dirección de obra para proyectos de climatización de cualquier magnitud.',
   },
 ];
+
+/** Specialised `WebPage` subtype per route, for sitelink and rich-result eligibility. */
+const PAGE_TYPE_BY_ROUTE: Record<ERoute, string> = {
+  [ERoute.Home]: 'WebPage',
+  [ERoute.Servicios]: 'CollectionPage',
+  [ERoute.Historia]: 'AboutPage',
+  [ERoute.Clientes]: 'CollectionPage',
+  [ERoute.Contacto]: 'ContactPage',
+};
+
+/**
+ * Map a Wikidata-bound concept or place to a schema.org node.
+ * @param type Node `@type` (`AdministrativeArea` for places, `Thing` for concepts).
+ * @returns Mapper producing `{ '@type', name, sameAs }` nodes.
+ */
+function wikidataNodes(type: 'AdministrativeArea' | 'Thing') {
+  return (entity: { name: string; wikidata: string }): IJsonLdNode => ({
+    '@type': type,
+    name: entity.name,
+    sameAs: entity.wikidata,
+  });
+}
 
 /** Ordered route list used to derive breadcrumb trails. */
 const BREADCRUMB_ROUTES: readonly ERoute[] = [
@@ -151,7 +177,7 @@ function organizationNode(): IJsonLdNode {
     '@id': SCHEMA_ID.organization,
     name: SITE.name,
     legalName: company.legalName,
-    alternateName: ['Climas LORSAM', 'Lorsam Climas', 'Multi Servicios y Climas Lorsam'],
+    alternateName: [...BRAND_ALTERNATE_NAMES],
     description: mission,
     slogan: company.slogan,
     url: SITE_URL,
@@ -172,17 +198,18 @@ function organizationNode(): IJsonLdNode {
       latitude: GEO_COORDINATES.latitude,
       longitude: GEO_COORDINATES.longitude,
     },
-    areaServed: AREAS_SERVED.map((name) => ({ '@type': 'AdministrativeArea', name })),
+    serviceArea: {
+      '@type': 'GeoCircle',
+      geoMidpoint: {
+        '@type': 'GeoCoordinates',
+        latitude: GEO_COORDINATES.latitude,
+        longitude: GEO_COORDINATES.longitude,
+      },
+      geoRadius: SERVICE_RADIUS_METERS,
+    },
+    areaServed: AREAS_SERVED.map(wikidataNodes('AdministrativeArea')),
     knowsLanguage: ['es-MX', 'es'],
-    knowsAbout: [
-      'Climatización industrial',
-      'Refrigeración industrial',
-      'Sistemas VRF y TVR',
-      'Chillers y agua helada',
-      'Cuartos fríos y cadena de frío',
-      'Ventilación y extracción industrial',
-      'Eficiencia energética HVAC',
-    ],
+    knowsAbout: KNOWS_ABOUT.map(wikidataNodes('Thing')),
     sameAs: [contact.facebook],
     contactPoint: [
       ...office.map((telephone) => ({
@@ -251,7 +278,7 @@ function breadcrumbNode(meta: ISeoMeta): IJsonLdNode {
 function webPageNode(meta: ISeoMeta): IJsonLdNode {
   const url = canonicalUrl(meta.path);
   return {
-    '@type': 'WebPage',
+    '@type': PAGE_TYPE_BY_ROUTE[meta.path],
     '@id': `${url}#webpage`,
     url,
     name: meta.title,
@@ -265,6 +292,10 @@ function webPageNode(meta: ISeoMeta): IJsonLdNode {
       url: meta.image ?? DEFAULT_OG_IMAGE,
       width: OG_IMAGE.width,
       height: OG_IMAGE.height,
+    },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: [...SPEAKABLE_SELECTORS],
     },
   };
 }

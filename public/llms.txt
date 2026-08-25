@@ -1,0 +1,61 @@
+# LORSAM — Climatización y Refrigeración Industrial HVAC/R
+
+> Multi Servicios y Climas Lorsam SA de CV (LORSAM) es una empresa mexicana especializada en cálculo, ingeniería, instalación y pólizas de mantenimiento de sistemas HVAC/R comerciales e industriales. Fundada en 1982, acumula más de 40 años de trayectoria ininterrumpida y más de 500 unidades de gran escala instaladas en la República Mexicana. Su base de operaciones está en Santa Catarina, Nuevo León, dentro del área metropolitana de Monterrey. Eslogan: "Innovación Térmica, Excelencia Operativa".
+
+## Identidad
+
+- Razón social: Multi Servicios y Climas Lorsam SA de CV
+- Nombre comercial: LORSAM
+- Variantes de marca: Climas LORSAM, Lorsam Climas, Climas y Refrigeración del Valle, Refri-Valle, Servicios Generales y Aire Acondicionado
+- Fundación: 1982
+- Sede: Avenida Luis Donaldo Colosio, Santa Catarina, Nuevo León, México
+- Coordenadas: 25.6766, -100.4633
+- Idioma de atención: español (es-MX)
+- Moneda: MXN
+
+## Servicios
+
+- [Sistemas VRF / TVR](https://www.lorsam.com/servicios): climatización centralizada de volumen de refrigerante variable con control independiente por zona, para corporativos, hospitales y desarrollos verticales.
+- [Chillers y sistemas de agua helada](https://www.lorsam.com/servicios): instalación, restauración y mantenimiento de chillers de placas y de casco y tubo, manejadoras, fan & coils y torres de enfriamiento industrial.
+- [Mantenimiento preventivo y correctivo](https://www.lorsam.com/servicios): diagnóstico térmico, detección de fugas, balanceo de flujo y reparación con tiempos de respuesta rápidos.
+- [Pólizas de mantenimiento integral](https://www.lorsam.com/servicios): inspecciones programadas, reportes técnicos, suministro de refacciones y atención prioritaria en infraestructura crítica.
+- [Cuartos fríos y cadena de frío](https://www.lorsam.com/servicios): cámaras de conservación y de congelación con control preciso de temperatura y humedad para productos alimenticios, médicos y logísticos.
+- [Ventilación, inyección y extracción industrial](https://www.lorsam.com/servicios): redes de ductería, espiroductos, difusores y compuertas de seguridad.
+- [Climatización comercial y corporativa](https://www.lorsam.com/servicios): minisplits, multi splits, sistemas divididos, unidades paquete y equipos tipo cassette.
+- [Ingeniería y cálculo térmico](https://www.lorsam.com/servicios): levantamiento en sitio, cálculo de carga térmica y dirección de obra.
+
+## Cobertura geográfica
+
+Santa Catarina, Monterrey, San Pedro Garza García, San Nicolás de los Garza, Apodaca, General Escobedo, Guadalupe y García. Todo el estado de Nuevo León y proyectos industriales en toda la República Mexicana.
+
+## Clientes de referencia
+
+- Salud e investigación: IMSS (clínicas, UMF y Hospitales Generales de Zona), Hospital y Centro Médico San Jorge, CIBIN, Constructora Monteliz.
+- Energía y gobierno: CFE Zona Oriente, Municipio de General Escobedo (Presidencia, Torre Administrativa y Centro de Seguridad C4), Palacio de Justicia del Estado.
+- Misión crítica y telecomunicaciones: Marcatel Internacional (casetas de precisión SAET), TICSA Comunicaciones, Comunicaciones Unifica.
+- Desarrollos verticales y corporativos: Torre Micrópolis, Torre Fuentes, Torre Planetario, Torre Martel, Punto Central, Plaza Vita.
+- Industria y logística: LG Industrial Systems, Transportadora Tres Generaciones, Express 57, Parque Industrial Escobedo.
+
+## Contacto directo (sin formularios)
+
+- Teléfono principal: +52 81 4050 8085 — tel:+528140508085
+- Teléfono secundario: +52 81 1409 6175 — tel:+528114096175
+- WhatsApp ventas: https://wa.me/528132665496
+- WhatsApp cotizaciones: https://wa.me/528132673228
+- WhatsApp pólizas y soporte: https://wa.me/528132667010
+- Correo principal: administracion@lorsam.com
+- Correo alterno: climas_@hotmail.com
+- Facebook: https://www.facebook.com/profile.php?id=61577167671892
+- Horario: lunes a viernes 08:00–18:00, sábado 08:00–14:00, domingo cerrado. Guardia 24/7 para clientes con póliza activa.
+
+## Páginas
+
+- [Inicio](https://www.lorsam.com/): presentación de la empresa, especialidad VRF/TVR y preguntas frecuentes.
+- [Servicios](https://www.lorsam.com/servicios): catálogo completo y cobertura técnica.
+- [Historia](https://www.lorsam.com/historia): evolución desde 1982 hasta la consolidación corporativa en 2025.
+- [Clientes](https://www.lorsam.com/clientes): portafolio de proyectos por sector.
+- [Contacto](https://www.lorsam.com/contacto): canales de cotización, horario y formas de pago.
+
+## Optional
+
+- [Dossier técnico completo](https://www.lorsam.com/llms-full.txt): base de conocimiento extendida para sistemas RAG.

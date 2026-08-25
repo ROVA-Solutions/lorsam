@@ -1,11 +1,18 @@
 # robots.txt — https://www.lorsam.com
-# Multi Servicios y Climas Lorsam SA de CV
+# Multi Servicios y Climas Lorsam SA de CV (LORSAM)
+# Climatización y refrigeración industrial HVAC/R — Santa Catarina, Nuevo León, México.
+#
+# The whole site is public marketing content with no private routes, so every
+# named agent is granted full access. Traditional crawlers and generative /
+# answer engines are listed explicitly: several AI agents ignore the wildcard
+# group and only honour a block that names them.
 
 User-agent: *
 Allow: /
 Disallow: /api/
 
-# Explicit allowances for the main search crawlers
+# ─── Traditional search engines ───────────────────────────────────────────────
+
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
@@ -16,6 +23,104 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 Disallow: /api/
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# ─── Generative and answer engines (GEO / AEO) ────────────────────────────────
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
 
 Sitemap: https://www.lorsam.com/sitemap.xml
 Host: https://www.lorsam.com

@@ -67,7 +67,7 @@ export const SEO_BY_ROUTE: Record<ERoute, ISeoMeta> = {
     path: ERoute.Servicios,
     title: 'Servicios HVAC/R Monterrey: VRF, Chillers | LORSAM',
     description:
-      'Ingeniería, instalación y mantenimiento HVAC/R en Monterrey: VRF/TVR, chillers, cuartos fríos y ventilación industrial. Pólizas de mantenimiento con LORSAM.',
+      'Ingeniería, instalación y mantenimiento HVAC/R en Monterrey: VRF/TVR, chillers, cuartos fríos y ventilación industrial. Pólizas especializadas con LORSAM.',
     breadcrumbLabel: 'Servicios',
     keywords: keywords([
       'mantenimiento de chillers',
@@ -96,7 +96,7 @@ export const SEO_BY_ROUTE: Record<ERoute, ISeoMeta> = {
     path: ERoute.Clientes,
     title: 'Clientes HVAC/R en México · Hospitales e Industria | LORSAM',
     description:
-      'LORSAM respalda proyectos HVAC/R de misión crítica para IMSS, CFE y torres corporativas en México. +500 unidades instaladas en climatización y refrigeración.',
+      'Proyectos HVAC/R de misión crítica para IMSS, CFE y torres corporativas en México. +500 unidades instaladas en climatización y refrigeración con LORSAM.',
     breadcrumbLabel: 'Clientes',
     keywords: keywords([
       'proyectos hvac hospitales monterrey',
@@ -108,9 +108,9 @@ export const SEO_BY_ROUTE: Record<ERoute, ISeoMeta> = {
   },
   [ERoute.Contacto]: {
     path: ERoute.Contacto,
-    title: 'Contacto LORSAM · Cotiza HVAC/R en Santa Catarina',
+    title: 'Contacto LORSAM · Cotiza HVAC/R en Santa Catarina, NL',
     description:
-      'Cotiza tu proyecto de climatización o refrigeración industrial con LORSAM: teléfono, WhatsApp y correo. Base en Santa Catarina, Nuevo León, cobertura nacional.',
+      'Cotiza climatización y refrigeración industrial con LORSAM: WhatsApp, teléfono y correo. Base en Santa Catarina, Nuevo León y cobertura en todo México.',
     breadcrumbLabel: 'Contacto',
     keywords: keywords([
       'cotizar aire acondicionado industrial monterrey',
@@ -127,6 +127,6 @@ export const SEO_NOT_FOUND: ISeoMeta = {
   path: ERoute.Home,
   title: 'Página no encontrada | LORSAM',
   description:
-    'La página que buscas no existe o fue movida. Regresa al inicio de LORSAM para explorar nuestras soluciones HVAC/R.',
+    'La página solicitada no existe. Regresa al portal de LORSAM para explorar nuestras soluciones y servicios de climatización y refrigeración industrial.',
   noindex: true,
 };
